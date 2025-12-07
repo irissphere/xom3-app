@@ -1,0 +1,10 @@
+{
+  "name": "xom3-app",
+  "version": "1.0.0",
+  "description": "XOM3 (Xtension of Me) - Demo Booking App",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . -p 3001",
+    "start": "npx serve . -p 3001"
+  }
+}

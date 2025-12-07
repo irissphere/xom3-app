@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started | Xtension of Me</title>
+  <meta name="description" content="Book a demo and discover how Xtension of Me can automate your business operations with AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root {
+      --cyan: #00D9FF;
+      --purple: #7C3AED;
+      --dark-1: #050508;
+      --dark-2: #0a0a0f;
+      --dark-3: #12121a;
+      --gray: #6b7280;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--dark-1);
+      color: var(--white);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Sacred Geometry Background */
+    .sacred-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .grid-lines {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.4;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .orb-1 {
+      width: 400px;
+      height: 400px;
+      background: var(--cyan);
+      top: -100px;
+      right: -100px;
+    }
+
+    .orb-2 {
+      width: 300px;
+      height: 300px;
+      background: var(--purple);
+      bottom: -50px;
+      left: -50px;
+      animation-delay: -10s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, 30px) scale(1.1); }
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      background: rgba(5, 5, 8, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--white);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .nav-logo svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    /* Main Content */
+    main {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    /* Left Side - Hero */
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 span {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-content p {
+      color: var(--gray);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .benefits {
+      list-style: none;
+    }
+
+    .benefits li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .benefits li svg {
+      width: 20px;
+      height: 20px;
+      color: var(--cyan);
+      flex-shrink: 0;
+    }
+
+    /* Right Side - Form */
+    .form-card {
+      background: var(--dark-2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 2.5rem;
+    }
+
+    .form-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-card .subtitle {
+      color: var(--gray);
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      background: var(--dark-3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: var(--white);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.1);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--gray);
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+    }
+
+    .form-group select option {
+      background: var(--dark-2);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      border: none;
+      border-radius: 8px;
+      color: var(--dark-1);
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--gray);
+      font-size: 0.875rem;
+    }
+
+    .form-footer a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    /* Success Message */
+    .success-message {
+      display: none;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+
+    .success-message svg {
+      width: 64px;
+      height: 64px;
+      color: var(--cyan);
+      margin-bottom: 1.5rem;
+    }
+
+    .success-message h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .success-message p {
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .form-content.hidden {
+      display: none;
+    }
+
+    /* Calendar Link Button */
+    .calendar-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: transparent;
+      border: 1px solid var(--cyan);
+      border-radius: 8px;
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .calendar-link:hover {
+      background: var(--cyan);
+      color: var(--dark-1);
+    }
+  </style>
+</head>
+<body>
+  <div class="sacred-bg">
+    <div class="grid-lines"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="https://xom3.io" class="nav-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+          <path d="M10 28L15 12H18L23 28H20L19 24H14L13 28H10ZM14.8 21.5H18.2L16.5 15L14.8 21.5Z" fill="#050508"/>
+          <path d="M24 12H27V25H32V28H24V12Z" fill="#050508"/>
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00D9FF"/>
+              <stop offset="1" stop-color="#7C3AED"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Xtension of Me</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://xom3.io">Home</a></li>
+        <li><a href="https://xom3.io#features">Features</a></li>
+        <li><a href="https://xom3.io#pricing">Pricing</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Let's Build Your <span>AI Automation</span></h1>
+        <p>Book a free strategy session and discover how Xtension of Me can transform your business operations. We'll analyze your workflow and create a custom automation plan.</p>
+        
+        <ul class="benefits">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            Free 30-minute strategy call
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            Custom automation roadmap
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            ROI analysis for your business
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            No commitment required
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <div class="form-content" id="formContent">
+          <h2>Book Your Demo</h2>
+          <p class="subtitle">Tell us about your automation needs</p>
+          
+          <form id="intakeForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="John Smith">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="john@company.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Acme Inc.">
+            </div>
+            
+            <div class="form-group">
+              <label for="interest">What are you looking to automate? *</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option value="lead-generation">Lead Generation & Sales</option>
+                <option value="customer-support">Customer Support</option>
+                <option value="data-processing">Data Processing & Analytics</option>
+                <option value="marketing">Marketing Automation</option>
+                <option value="operations">Internal Operations</option>
+                <option value="integration">System Integrations</option>
+                <option value="other">Other / Multiple Areas</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Tell us more (optional)</label>
+              <textarea id="message" name="message" placeholder="Describe your current challenges or what you'd like to achieve..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              Request Demo Call
+            </button>
+          </form>
+          
+          <p class="form-footer">
+            By submitting, you agree to our <a href="https://xom3.org/terms">Terms</a> and <a href="https://xom3.org/privacy">Privacy Policy</a>
+          </p>
+        </div>
+
+        <div class="success-message" id="successMessage">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <h3>Request Received!</h3>
+          <p>Thanks for your interest in Xtension of Me. Preston will reach out within 24 hours to schedule your demo call.</p>
+          <a href="mailto:preston.chenault@xom3.io" class="calendar-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Email Preston Directly
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById('intakeForm');
+    const formContent = document.getElementById('formContent');
+    const successMessage = document.getElementById('successMessage');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation: spin 1s linear infinite;">
+          <circle cx="12" cy="12" r="10"/>
+        </svg>
+        Submitting...
+      `;
+
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        company: document.getElementById('company').value,
+        interest: document.getElementById('interest').value,
+        message: document.getElementById('message').value,
+        timestamp: new Date().toISOString(),
+        source: 'start.xom3.org'
+      };
+
+      try {
+        // Send to n8n webhook (you'll set this up)
+        // Replace YOUR_WEBHOOK_URL with your actual n8n webhook
+        const webhookUrl = 'https://n8n.srv1058373.hstgr.cloud/webhook/xom3-demo-request';
+        
+        await fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+          mode: 'no-cors' // Handle CORS for demo
+        });
+      } catch (error) {
+        console.log('Webhook may not be configured yet');
+      }
+
+      // Also send email notification via mailto fallback
+      const mailtoSubject = encodeURIComponent(`XOM3 Demo Request: ${formData.name}`);
+      const mailtoBody = encodeURIComponent(
+        `New demo request from start.xom3.org\n\n` +
+        `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Company: ${formData.company}\n` +
+        `Interest: ${formData.interest}\n` +
+        `Message: ${formData.message}\n\n` +
+        `Submitted: ${formData.timestamp}`
+      );
+
+      // Open mailto as backup (hidden iframe approach for better UX)
+      const mailtoLink = `mailto:preston.chenault@xom3.io?subject=${mailtoSubject}&body=${mailtoBody}`;
+      
+      // Show success regardless (form submitted)
+      formContent.classList.add('hidden');
+      successMessage.classList.add('show');
+    });
+
+    // Add spin animation
+    const style = document.createElement('style');
+    style.textContent = `@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>

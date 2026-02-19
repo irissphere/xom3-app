@@ -1,0 +1,790 @@
+[
+  {
+    "id": "auto-1766198380841-0okfyf",
+    "at": 1766198380841,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198381444-0mkfoi",
+    "at": 1766198381444,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198426650-4u6l0t",
+    "at": 1766198426650,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198442294-wac6gq",
+    "at": 1766198442294,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198472378-q0i3g6",
+    "at": 1766198472378,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198503018-zmfv0b",
+    "at": 1766198503018,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198518114-5mxhrq",
+    "at": 1766198518114,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198563337-9325zn",
+    "at": 1766198563337,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198564028-s0zs61",
+    "at": 1766198564028,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198611246-rn73ap",
+    "at": 1766198611247,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198625058-rzq9h3",
+    "at": 1766198625058,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198654890-32i1b2",
+    "at": 1766198654890,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198685428-hjtxbq",
+    "at": 1766198685428,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198700510-p91lnr",
+    "at": 1766198700510,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198746689-mqy2ol",
+    "at": 1766198746689,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198746766-ztz7nl",
+    "at": 1766198746766,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198791913-popbuj",
+    "at": 1766198791913,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198807504-scscsh",
+    "at": 1766198807504,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198837574-2jtvzh",
+    "at": 1766198837574,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198868100-347soq",
+    "at": 1766198868100,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198883184-xrmonk",
+    "at": 1766198883185,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198928666-pj2xao",
+    "at": 1766198928666,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198928755-7wd397",
+    "at": 1766198928755,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766198973809-0zjxa0",
+    "at": 1766198973809,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766198989352-r8z3ff",
+    "at": 1766198989352,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766199019457-14n6b9",
+    "at": 1766199019457,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199050031-8z3out",
+    "at": 1766199050031,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766199065096-mc77rv",
+    "at": 1766199065096,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199111026-ly2w42",
+    "at": 1766199111026,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199111095-wdq1fz",
+    "at": 1766199111095,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766199156822-irab31",
+    "at": 1766199156822,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199172038-qkpqi1",
+    "at": 1766199172038,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766199202160-ps1yyv",
+    "at": 1766199202160,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199233286-wnxtwv",
+    "at": 1766199233286,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766199248382-ngbkl8",
+    "at": 1766199248382,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199293409-i95kjk",
+    "at": 1766199293409,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199294009-d8wo2a",
+    "at": 1766199294009,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766199339190-l3t15a",
+    "at": 1766199339190,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766199354590-hpfeq4",
+    "at": 1766199354590,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766201546315-vgc7wb",
+    "at": 1766201546315,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766201547516-y0makr",
+    "at": 1766201547516,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766201592691-ebv0lv",
+    "at": 1766201592692,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766201608612-3lpg7q",
+    "at": 1766201608612,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766212198493-m4gkes",
+    "at": 1766212198493,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212198794-ege73e",
+    "at": 1766212198794,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766212468892-bdbzry",
+    "at": 1766212468892,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212469283-pl5r5p",
+    "at": 1766212469283,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766212513613-g5dvbr",
+    "at": 1766212513613,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212559061-q640y9",
+    "at": 1766212559062,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212574594-z5o8ju",
+    "at": 1766212574594,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766212604827-syugkj",
+    "at": 1766212604827,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212650837-fzcxsk",
+    "at": 1766212650837,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212729236-7uyn1j",
+    "at": 1766212729236,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212729985-zvlb7a",
+    "at": 1766212729985,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766212788965-hnq5qx",
+    "at": 1766212788966,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212849433-ka70k7",
+    "at": 1766212849433,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766212850757-1609lu",
+    "at": 1766212850757,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766212904698-usecft",
+    "at": 1766212904698,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766213134506-x9ku10",
+    "at": 1766213134506,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766213134737-95nw5v",
+    "at": 1766213134737,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766213513663-rsuxz7",
+    "at": 1766213513663,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766213514485-s1v6be",
+    "at": 1766213514485,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766232874274-kl0y6q",
+    "at": 1766232874274,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766232874507-3aj32j",
+    "at": 1766232874507,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766232919677-xst3j0",
+    "at": 1766232919677,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766232934766-v23itw",
+    "at": 1766232934766,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766232994860-stiot3",
+    "at": 1766232994860,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  },
+  {
+    "id": "auto-1766232995180-jfn3zh",
+    "at": 1766232995180,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "executed:ping_agents",
+    "reason": "executed via orchestration intent on global",
+    "context": {
+      "target": "global",
+      "votes": 1
+    }
+  },
+  {
+    "id": "auto-1766233040237-gf11og",
+    "at": 1766233040237,
+    "agent": "companion",
+    "kind": "proposal",
+    "action": "ping_agents",
+    "reason": "heartbeat check",
+    "context": {
+      "target": "global"
+    }
+  }
+]

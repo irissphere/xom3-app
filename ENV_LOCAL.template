@@ -1,0 +1,158 @@
+# XOM3 Cockpit Environment Variables
+# Copy this file to `.env.local` and fill values.
+#
+# PowerShell:
+#   Copy-Item .\ENV_LOCAL.template .\.env.local
+#
+# Notes:
+# - Keep secrets out of git.
+# - Restart `npm run dev` after edits.
+#
+# ============================================================
+# Core App
+# ============================================================
+
+NODE_ENV=development
+
+# Public base URLs (used for redirects and callback URLs)
+NEXT_PUBLIC_URL=http://localhost:3000
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+NEXTAUTH_URL=http://localhost:3000
+
+# Auth
+NEXTAUTH_SECRET=change_me_in_prod
+
+# Primary tenant (avoid implicit defaults)
+TENANT_KEY=xom3
+
+# Feature flags / guardrails
+ENABLE_HI5=false
+ALLOW_DIAGNOSTICS=false
+ALLOW_WORKFLOW_CONTROL=false
+
+# ============================================================
+# Airtable (CRM Sovereign)
+# ============================================================
+
+# Create token: https://airtable.com/create/tokens
+AIRTABLE_API_KEY=
+
+# XOM3 primary base (cockpit / business pipelines)
+AIRTABLE_BASE_ID=
+
+# Healthcare CRM base (optional; required for /app/healthcare surfaces that read USHA)
+AIRTABLE_USHA_BASE_ID=
+
+# Control surface table name in AIRTABLE_BASE_ID (must exist)
+AIRTABLE_CONTROL_TABLE=Xom3 Control
+
+# Optional field overrides for HI5 control surfaces (only if ENABLE_HI5=true)
+HI5_CONTROL_FIELD_TENANT=
+HI5_CONTROL_FIELD_AUTOMATION_ENABLED=
+HI5_CONTROL_FIELD_PLAN=
+HI5_CONTROL_FIELD_UPDATED_AT=
+
+# ============================================================
+# n8n (Workflow Sovereign)
+# ============================================================
+
+# Base URL of your n8n instance (for health + diagnostics)
+N8N_BASE_URL=http://localhost:5678
+
+# API key (if you use /api/tenant/config/posture and other authenticated calls)
+N8N_API_KEY=
+
+# Webhook base URL (public URL that receives webhook requests)
+N8N_WEBHOOK_BASE_URL=http://localhost:5678
+
+# Webhook paths (must match your n8n workflows)
+N8N_WEBHOOK_SOCIAL_QUEUE_PATH=/webhook/social/queue
+N8N_WEBHOOK_REVENUE_STATE_PATH=/webhook/revenue/state
+N8N_WEBHOOK_REVENUE_TRIGGERS_PATH=/webhook/revenue/triggers
+
+# Automation runner posture
+AUTOMATION_RUNNER_TYPE=stub
+N8N_CLI_PATH=n8n
+VPS_AUTOMATION_ENDPOINT=
+
+# Commander (optional)
+COMMANDER_N8N_INTAKE_WEBHOOK_URL=
+COMMANDER_N8N_FOLLOWUP_WEBHOOK_URL=
+HI5_N8N_LEAD_INTAKE_WEBHOOK_URL=
+
+# ============================================================
+# Supabase (Posture + Spine)
+# ============================================================
+
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+
+# ============================================================
+# Stripe (Billing)
+# ============================================================
+
+STRIPE_SECRET_KEY=
+STRIPE_PUBLISHABLE_KEY=
+STRIPE_WEBHOOK_SECRET=
+STRIPE_PRICE_XOM3=
+STRIPE_PRICE_HEALTHCARE=
+
+# ============================================================
+# Social OAuth (optional, clears "Missing" posture in social surfaces)
+# See: OAUTH_ENV_TEMPLATE.txt
+# ============================================================
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+TWITTER_CLIENT_ID=
+TWITTER_CLIENT_SECRET=
+
+META_APP_ID=
+META_APP_SECRET=
+
+TIKTOK_CLIENT_KEY=
+TIKTOK_CLIENT_SECRET=
+
+LINKEDIN_CLIENT_ID=
+LINKEDIN_CLIENT_SECRET=
+
+# ============================================================
+# SMS / Calling (optional)
+# ============================================================
+
+AGENT_NAME=
+COMPANY_PHONE=
+
+OPENPHONE_API_KEY=
+OPENPHONE_SMS_WEBHOOK_URL=
+
+SMS_PROVIDER=
+
+# Twilio Configuration
+# Get credentials from: https://console.twilio.com/
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_PHONE_NUMBER=
+
+# Twilio webhook routes (for n8n integration)
+# These receive inbound SMS and delivery status updates
+N8N_TWILIO_INBOUND_WEBHOOK_URL=
+N8N_TWILIO_STATUS_WEBHOOK_URL=
+
+# ============================================================
+# Slack (optional)
+# ============================================================
+
+SLACK_WEBHOOK_URL=
+
+# ============================================================
+# Vercel Postgres (optional)
+# Used by lib/system/persistence.ts when POSTGRES_URL is present.
+# ============================================================
+
+POSTGRES_URL=
+POSTGRES_PRISMA_URL=
+VERCEL_POSTGRES_URL=

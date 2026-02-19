@@ -1,0 +1,14 @@
+**/node_modules/**
+**/.next/**
+**/dist/**
+**/build/**
+**/out/**
+**/coverage/**
+**/.turbo/**
+**/.vite/**
+**/.cache/**
+**/.pnpm-store/**
+**/.yarn/**
+**/.git/**
+**/.DS_Store
+**/*.log

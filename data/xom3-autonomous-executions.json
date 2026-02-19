@@ -1,0 +1,1646 @@
+[
+  {
+    "id": "exec-1766198381085-7cma2t",
+    "at": 1766198381085,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.2,
+      "weights": {
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1,
+        "companion": 1
+      },
+      "meta": {
+        "agentReliability": {},
+        "sovereignStability": {},
+        "actionSuccessRates": {},
+        "falsePositiveRates": {},
+        "falseNegativeRates": {}
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198441859-y2vxxw",
+    "at": 1766198441859,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.22,
+      "weights": {
+        "companion": 1.1,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.8333333333333334
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198502406-dip7o6",
+    "at": 1766198502406,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.24,
+      "weights": {
+        "companion": 1.2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.7142857142857143
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198563418-xvuczy",
+    "at": 1766198563418,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.26,
+      "weights": {
+        "companion": 1.3,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.625
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198624155-8sh0n8",
+    "at": 1766198624155,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.28,
+      "weights": {
+        "companion": 1.4,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.5555555555555556
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198684888-n471jb",
+    "at": 1766198684888,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.3,
+      "weights": {
+        "companion": 1.5,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.5
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198745565-2yho14",
+    "at": 1766198745565,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.316,
+      "weights": {
+        "companion": 1.58,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.45454545454545453
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198806930-47hehs",
+    "at": 1766198806930,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.332,
+      "weights": {
+        "companion": 1.66,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.4166666666666667
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198867550-atdrw1",
+    "at": 1766198867550,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.346,
+      "weights": {
+        "companion": 1.73,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.3846153846153846
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198928161-h7c50w",
+    "at": 1766198928161,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.362,
+      "weights": {
+        "companion": 1.81,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.35714285714285715
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766198988825-aeowl7",
+    "at": 1766198988825,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.378,
+      "weights": {
+        "companion": 1.89,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.3333333333333333
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766199049463-vmqecm",
+    "at": 1766199049463,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.392,
+      "weights": {
+        "companion": 1.96,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.3125
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766199110405-53psg4",
+    "at": 1766199110405,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.4,
+      "weights": {
+        "companion": 2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.29411764705882354
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766199171244-20wdfz",
+    "at": 1766199171244,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.4,
+      "weights": {
+        "companion": 2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.2777777777777778
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766199232354-bub5mg",
+    "at": 1766199232354,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.4,
+      "weights": {
+        "companion": 2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.2631578947368421
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766199293485-3qse9t",
+    "at": 1766199293485,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.4,
+      "weights": {
+        "companion": 2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.25
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766199354086-23u5ii",
+    "at": 1766199354086,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.4,
+      "weights": {
+        "companion": 2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.23809523809523808
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766201546834-d9fwr5",
+    "at": 1766201546834,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.2,
+      "weights": {
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1,
+        "companion": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.22727272727272727
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766201607849-f2xu8a",
+    "at": 1766201607849,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.22,
+      "weights": {
+        "companion": 1.1,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.2173913043478261
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766212198483-w10tiz",
+    "at": 1766212198483,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.2,
+      "weights": {
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1,
+        "companion": 1
+      },
+      "meta": {
+        "agentReliability": {},
+        "sovereignStability": {},
+        "actionSuccessRates": {},
+        "falsePositiveRates": {},
+        "falseNegativeRates": {}
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766212468920-pxoexi",
+    "at": 1766212468920,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.22,
+      "weights": {
+        "companion": 1.1,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.8333333333333334
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766212513625-zepuc7",
+    "at": 1766212513625,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": false,
+    "skipped": true,
+    "skipReason": "cooldown",
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.24,
+      "weights": {
+        "companion": 1.2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.7142857142857143
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766212574081-5l5di7",
+    "at": 1766212574081,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.102,
+      "weights": {
+        "companion": 1.15,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 0.6666666666666666
+        },
+        "sovereignStability": {
+          "global": 0.625
+        },
+        "actionSuccessRates": {
+          "ping_agents": 0.6666666666666666
+        },
+        "falsePositiveRates": {
+          "companion": 0.3333333333333333
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766212634817-dvs8m5",
+    "at": 1766212634817,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": false,
+    "skipped": true,
+    "skipReason": "cooldown",
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.141,
+      "weights": {
+        "companion": 1.25,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 0.75
+        },
+        "sovereignStability": {
+          "global": 0.5555555555555556
+        },
+        "actionSuccessRates": {
+          "ping_agents": 0.75
+        },
+        "falsePositiveRates": {
+          "companion": 0.25
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766212729335-y35yiu",
+    "at": 1766212729335,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.086,
+      "weights": {
+        "companion": 1.2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 0.6
+        },
+        "sovereignStability": {
+          "global": 0.5
+        },
+        "actionSuccessRates": {
+          "ping_agents": 0.6
+        },
+        "falsePositiveRates": {
+          "companion": 0.4
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766212849630-m1lnin",
+    "at": 1766212849630,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.116,
+      "weights": {
+        "companion": 1.3,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 0.6666666666666666
+        },
+        "sovereignStability": {
+          "global": 0.45454545454545453
+        },
+        "actionSuccessRates": {
+          "ping_agents": 0.6666666666666666
+        },
+        "falsePositiveRates": {
+          "companion": 0.3333333333333333
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766213134530-r8wtx0",
+    "at": 1766213134530,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.138,
+      "weights": {
+        "companion": 1.35,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 0.7142857142857143
+        },
+        "sovereignStability": {
+          "global": 0.4166666666666667
+        },
+        "actionSuccessRates": {
+          "ping_agents": 0.7142857142857143
+        },
+        "falsePositiveRates": {
+          "companion": 0.2857142857142857
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766213513993-buhfan",
+    "at": 1766213513993,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.161,
+      "weights": {
+        "companion": 1.43,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 0.75
+        },
+        "sovereignStability": {
+          "global": 0.3846153846153846
+        },
+        "actionSuccessRates": {
+          "ping_agents": 0.75
+        },
+        "falsePositiveRates": {
+          "companion": 0.25
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766232874294-jmoeon",
+    "at": 1766232874294,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.2,
+      "weights": {
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1,
+        "companion": 1
+      },
+      "meta": {
+        "agentReliability": {},
+        "sovereignStability": {},
+        "actionSuccessRates": {},
+        "falsePositiveRates": {},
+        "falseNegativeRates": {}
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766232934608-apiq9c",
+    "at": 1766232934608,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.22,
+      "weights": {
+        "companion": 1.1,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.8333333333333334
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  },
+  {
+    "id": "exec-1766232994869-83o4oy",
+    "at": 1766232994869,
+    "agent": "companion",
+    "action": "ping_agents",
+    "target": "global",
+    "reason": "heartbeat check",
+    "executed": true,
+    "skipped": false,
+    "skipReason": null,
+    "consensus": {
+      "voters": [
+        "companion"
+      ],
+      "votes": 1,
+      "score": 0.24,
+      "weights": {
+        "companion": 1.2,
+        "navigator": 1,
+        "strategist": 1,
+        "sentinel": 1,
+        "oracle": 1
+      },
+      "meta": {
+        "agentReliability": {
+          "companion": 1
+        },
+        "sovereignStability": {
+          "global": 0.7142857142857143
+        },
+        "actionSuccessRates": {
+          "ping_agents": 1
+        },
+        "falsePositiveRates": {
+          "companion": 0
+        },
+        "falseNegativeRates": {
+          "companion": 0
+        }
+      },
+      "intent": {
+        "agent": "companion",
+        "action": "ping_agents",
+        "target": "global",
+        "reason": "heartbeat check",
+        "confidence": 0.2,
+        "sovereign": "agents",
+        "graphScore": 0,
+        "influenceScore": 0,
+        "tenantScore": 0,
+        "totalScore": 0.2
+      }
+    }
+  }
+]

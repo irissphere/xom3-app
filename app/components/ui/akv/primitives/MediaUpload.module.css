@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+}
+
+.label {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-2);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.dropzone {
+  width: 100%;
+  height: 200px;
+  border: 1px dashed var(--border-1);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.dropzone:hover, .dragging {
+  border-color: var(--xom3-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dragging {
+  box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.1);
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.previewContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.dropzone:hover .overlay {
+  opacity: 1;
+}
+
+.changeText {
+  color: white;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

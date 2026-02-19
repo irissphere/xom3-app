@@ -1,0 +1,43 @@
+.root {
+  appearance: none;
+  width: 100%;
+  height: var(--akv-control-height-md);
+  border-radius: var(--akv-radius-panel);
+  border: 1px solid var(--akv-border-0);
+  background:
+    linear-gradient(180deg, var(--akv-surface-2), rgba(255, 255, 255, 0.02));
+  color: var(--akv-text-primary);
+  padding: 0 calc(var(--akv-control-padding-x) + 24px) 0 var(--akv-control-padding-x);
+  font-family: var(--akv-font-body);
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition:
+    border-color var(--akv-motion-medium) var(--akv-ease-orbit),
+    box-shadow var(--akv-motion-medium) var(--akv-ease-orbit),
+    background var(--akv-motion-medium) var(--akv-ease-orbit);
+}
+
+.root:focus {
+  border-color: color-mix(in srgb, var(--akv-cyan) 35%, var(--akv-border-1));
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--akv-cyan) 16%, transparent);
+}
+
+.root:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sizeSm { height: var(--akv-control-height-sm); font-size: 12px; }
+.sizeLg { height: var(--akv-control-height-lg); font-size: 14px; }
+
+.toneDefault {}
+
+.toneRitual {
+  border-color: color-mix(in srgb, var(--akv-gold) 30%, var(--akv-border-0));
+}
+
+.toneRitual:focus {
+  border-color: color-mix(in srgb, var(--akv-gold) 45%, var(--akv-border-1));
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--akv-gold) 18%, transparent);
+}

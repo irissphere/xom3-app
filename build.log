@@ -1,0 +1,1059 @@
+
+> xom3-app@1.0.0 build
+> next build
+
+  Γû▓ Next.js 14.2.33
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ΓÜá Compiled with warnings
+
+./app/api/uoi/unified/route.ts
+Attempted import error: 'runUOI' is not exported from '@/lib/uoi/orchestrator' (imported as 'runUOI').
+
+Import trace for requested module:
+./app/api/uoi/unified/route.ts
+
+./lib/amp-ai/tse/direction.ts
+Attempted import error: 'defineSovereignRules' is not exported from './regulation' (imported as 'defineSovereignRules').
+
+Import trace for requested module:
+./lib/amp-ai/tse/direction.ts
+./lib/amp-ai/tse/orchestrator.ts
+./app/api/amp-ai/sovereign/route.ts
+
+./lib/amp-ai/tse/optimization.ts
+Attempted import error: 'runAPE' is not exported from '../ape/orchestrator' (imported as 'runAPE').
+
+Import trace for requested module:
+./lib/amp-ai/tse/optimization.ts
+./lib/amp-ai/tse/orchestrator.ts
+./app/api/amp-ai/sovereign/route.ts
+
+./lib/broadcast/auto-posting-engine.ts
+Attempted import error: 'storePost' is not exported from './store' (imported as 'storePost').
+
+Import trace for requested module:
+./lib/broadcast/auto-posting-engine.ts
+./app/api/broadcast/post/route.ts
+
+./lib/broadcast/auto-posting-engine.ts
+Attempted import error: 'storePost' is not exported from './store' (imported as 'storePost').
+
+Import trace for requested module:
+./lib/broadcast/auto-posting-engine.ts
+./app/api/broadcast/post/route.ts
+
+./lib/broadcast/queue/workers/funnel-worker.ts
+Attempted import error: 'processLeadForHPE' is not exported from '../../hpe-integration' (imported as 'processLeadForHPE').
+
+Import trace for requested module:
+./lib/broadcast/queue/workers/funnel-worker.ts
+./lib/broadcast/queue/worker-manager.ts
+./app/api/broadcast/workers/stop/route.ts
+
+ Γ£ô Compiled successfully
+   Skipping validation of types
+   Linting ...
+   Collecting page data ...
+   Generating static pages (0/194) ...
+Error getting agent identity: B [Error]: Dynamic server usage: Route /api/agents/identity couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at u (C:\Users\prest\exom3\xom3-app\.next\server\app\api\agents\identity\route.js:1:790)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/agents/identity couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[Broadcast API] ROI calculation error: B [Error]: Dynamic server usage: Route /api/broadcast/revenue/roi couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at c (C:\Users\prest\exom3\xom3-app\.next\server\app\api\broadcast\revenue\roi\route.js:1:557)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/broadcast/revenue/roi couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[Worker] posting_worker started
+[Worker] scraping_worker started
+[Worker] trend_worker started
+[Worker] lead_worker started
+[Worker] funnel_worker started
+[Worker] cleanup_worker started
+Error getting snapshot: B [Error]: Dynamic server usage: Route /api/cockpit/continuity/snapshot couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at u (C:\Users\prest\exom3\xom3-app\.next\server\app\api\cockpit\continuity\snapshot\route.js:1:563)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/cockpit/continuity/snapshot couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error getting suggestions: B [Error]: Dynamic server usage: Route /api/cockpit/flow/suggestions couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at c (C:\Users\prest\exom3\xom3-app\.next\server\app\api\cockpit\flow\suggestions\route.js:1:557)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/cockpit/flow/suggestions couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (48/194) 
+[Broadcast API] Dashboard leads error: B [Error]: Dynamic server usage: Route /api/broadcast/dashboard/leads couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at d (C:\Users\prest\exom3\xom3-app\.next\server\app\api\broadcast\dashboard\leads\route.js:1:571)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/broadcast/dashboard/leads couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[API] Billing query error: B [Error]: Dynamic server usage: Route /api/hpe/billing/query couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at u (C:\Users\prest\exom3\xom3-app\.next\server\app\api\hpe\billing\query\route.js:1:785)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/hpe/billing/query couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[API] Compliance query error: B [Error]: Dynamic server usage: Route /api/hpe/compliance/query couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at u (C:\Users\prest\exom3\xom3-app\.next\server\app\api\hpe\compliance\query\route.js:1:784)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/hpe/compliance/query couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[API] Compliance intelligence dashboard error: B [Error]: Dynamic server usage: Route /api/hpe/compliance-intelligence couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at w (C:\Users\prest\exom3\xom3-app\.next\server\app\api\hpe\compliance-intelligence\route.js:1:8235)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/hpe/compliance-intelligence couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[API] Interaction query error: B [Error]: Dynamic server usage: Route /api/hpe/interactions/query couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at c (C:\Users\prest\exom3\xom3-app\.next\server\app\api\hpe\interactions\query\route.js:1:785)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/hpe/interactions/query couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (96/194) 
+[HPE] Failed to generate predictions: B [Error]: Dynamic server usage: Route /api/hse/prediction couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29137)
+    at p (C:\Users\prest\exom3\xom3-app\.next\server\app\api\hse\prediction\route.js:1:558)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/hse/prediction couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Failed to generate visualization: B [Error]: Dynamic server usage: Route /api/usha/amp/viz couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at u (C:\Users\prest\exom3\xom3-app\.next\server\app\api\usha\amp\viz\route.js:1:543)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/usha/amp/viz couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (145/194) 
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[UOI] Event loop started (interval: 5000ms)
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Broadcast API] Dashboard posts error: B [Error]: Dynamic server usage: Route /api/broadcast/dashboard/posts couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at V (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:21778)
+    at Object.get (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29465)
+    at u (C:\Users\prest\exom3\xom3-app\.next\server\app\api\broadcast\dashboard\posts\route.js:1:556)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:38417
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:140:36
+    at NoopContextManager.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (C:\Users\prest\exom3\xom3-app\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\server\lib\trace\tracer.js:122:103 {
+  description: "Route /api/broadcast/dashboard/posts couldn't be rendered statically because it used `request.url`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+[Optimization Layer] Initializing...
+[Optimization Layer] Automation Queue initialized
+[Optimization Layer] Caching Layer ready
+[Optimization Layer] Consistency Checker ready
+[Optimization Layer] Drift Detection ready
+[Optimization Layer] Evolution Engine ready
+[Optimization Layer] Γ£à Initialization complete
+ Γ£ô Generating static pages (194/194)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                    Size     First Load JS
+Γöî ╞Æ /                                          147 B          87.6 kB
+Γö£ Γùï /_not-found                                876 B          88.3 kB
+Γö£ ╞Æ /api/agents/guardrails                     0 B                0 B
+Γö£ ╞Æ /api/agents/identity                       0 B                0 B
+Γö£ ╞Æ /api/agents/interactions                   0 B                0 B
+Γö£ ╞Æ /api/agents/performance                    0 B                0 B
+Γö£ ╞Æ /api/agents/tasks                          0 B                0 B
+Γö£ ╞Æ /api/amp-ai/continuum                      0 B                0 B
+Γö£ ╞Æ /api/amp-ai/detect-schema                  0 B                0 B
+Γö£ ╞Æ /api/amp-ai/evolve                         0 B                0 B
+Γö£ ╞Æ /api/amp-ai/federation                     0 B                0 B
+Γö£ ╞Æ /api/amp-ai/optimize                       0 B                0 B
+Γö£ ╞Æ /api/amp-ai/orchestrate                    0 B                0 B
+Γö£ ╞Æ /api/amp-ai/patterns                       0 B                0 B
+Γö£ ╞Æ /api/amp-ai/predict                        0 B                0 B
+Γö£ ╞Æ /api/amp-ai/rewrite                        0 B                0 B
+Γö£ ╞Æ /api/amp-ai/sovereign                      0 B                0 B
+Γö£ ╞Æ /api/auth/role                             0 B                0 B
+Γö£ ╞Æ /api/broadcast/ab-test                     0 B                0 B
+Γö£ ╞Æ /api/broadcast/collaboration/assign        0 B                0 B
+Γö£ ╞Æ /api/broadcast/cycle                       0 B                0 B
+Γö£ ╞Æ /api/broadcast/dashboard/leads             0 B                0 B
+Γö£ ╞Æ /api/broadcast/dashboard/posts             0 B                0 B
+Γö£ ╞Æ /api/broadcast/dashboard/stats             0 B                0 B
+Γö£ ╞Æ /api/broadcast/funnel                      0 B                0 B
+Γö£ ╞Æ /api/broadcast/generate                    0 B                0 B
+Γö£ ╞Æ /api/broadcast/ingest                      0 B                0 B
+Γö£ ╞Æ /api/broadcast/ingest/analytics            0 B                0 B
+Γö£ ╞Æ /api/broadcast/ingest/comments             0 B                0 B
+Γö£ ╞Æ /api/broadcast/ingest/dms                  0 B                0 B
+Γö£ ╞Æ /api/broadcast/ingest/mentions             0 B                0 B
+Γö£ ╞Æ /api/broadcast/ingest/trends               0 B                0 B
+Γö£ ╞Æ /api/broadcast/lead-detect                 0 B                0 B
+Γö£ ╞Æ /api/broadcast/lead-score                  0 B                0 B
+Γö£ ╞Æ /api/broadcast/learn                       0 B                0 B
+Γö£ ╞Æ /api/broadcast/optimize                    0 B                0 B
+Γö£ ╞Æ /api/broadcast/post                        0 B                0 B
+Γö£ ╞Æ /api/broadcast/post/process-scheduled      0 B                0 B
+Γö£ ╞Æ /api/broadcast/post/retry                  0 B                0 B
+Γö£ ╞Æ /api/broadcast/post/schedule               0 B                0 B
+Γö£ ╞Æ /api/broadcast/revenue/attribute           0 B                0 B
+Γö£ ╞Æ /api/broadcast/revenue/roi                 0 B                0 B
+Γö£ ╞Æ /api/broadcast/strategy                    0 B                0 B
+Γö£ ╞Æ /api/broadcast/trends                      0 B                0 B
+Γö£ ╞Æ /api/broadcast/trends/process              0 B                0 B
+Γö£ ╞Æ /api/broadcast/workers/start               0 B                0 B
+Γö£ Γùï /api/broadcast/workers/stats               0 B                0 B
+Γö£ ╞Æ /api/broadcast/workers/stop                0 B                0 B
+Γö£ ╞Æ /api/carriers/application                  0 B                0 B
+Γö£ ╞Æ /api/carriers/policy                       0 B                0 B
+Γö£ ╞Æ /api/carriers/underwriting                 0 B                0 B
+Γö£ ╞Æ /api/client/auth                           0 B                0 B
+Γö£ ╞Æ /api/client/documents/upload               0 B                0 B
+Γö£ ╞Æ /api/client/interactions                   0 B                0 B
+Γö£ ╞Æ /api/client/status                         0 B                0 B
+Γö£ ╞Æ /api/client/timeline                       0 B                0 B
+Γö£ ╞Æ /api/cockpit/activity                      0 B                0 B
+Γö£ Γùï /api/cockpit/agent                         0 B                0 B
+Γö£ ╞Æ /api/cockpit/command                       0 B                0 B
+Γö£ ╞Æ /api/cockpit/continuity                    0 B                0 B
+Γö£ ╞Æ /api/cockpit/continuity/lineage            0 B                0 B
+Γö£ ╞Æ /api/cockpit/continuity/recover            0 B                0 B
+Γö£ ╞Æ /api/cockpit/continuity/snapshot           0 B                0 B
+Γö£ ╞Æ /api/cockpit/errors                        0 B                0 B
+Γö£ ╞Æ /api/cockpit/evolution                     0 B                0 B
+Γö£ Γùï /api/cockpit/executive                     0 B                0 B
+Γö£ ╞Æ /api/cockpit/expansion                     0 B                0 B
+Γö£ ╞Æ /api/cockpit/finalize                      0 B                0 B
+Γö£ ╞Æ /api/cockpit/flow/navigate                 0 B                0 B
+Γö£ ╞Æ /api/cockpit/flow/suggestions              0 B                0 B
+Γö£ ╞Æ /api/cockpit/integration                   0 B                0 B
+Γö£ ╞Æ /api/cockpit/integration/intake            0 B                0 B
+Γö£ ╞Æ /api/cockpit/integration/output            0 B                0 B
+Γö£ ╞Æ /api/cockpit/integration/sync              0 B                0 B
+Γö£ Γùï /api/cockpit/intelligence                  0 B                0 B
+Γö£ ╞Æ /api/cockpit/intelligence/evolution        0 B                0 B
+Γö£ Γùï /api/cockpit/intelligence/predictions      0 B                0 B
+Γö£ Γùï /api/cockpit/intelligence/recommendations  0 B                0 B
+Γö£ ╞Æ /api/cockpit/intelligence/signal           0 B                0 B
+Γö£ Γùï /api/cockpit/intelligence/warnings         0 B                0 B
+Γö£ ╞Æ /api/cockpit/memory                        0 B                0 B
+Γö£ Γùï /api/cockpit/operations                    0 B                0 B
+Γö£ ╞Æ /api/cockpit/persona                       0 B                0 B
+Γö£ Γùï /api/cockpit/ritual                        0 B                0 B
+Γö£ ╞Æ /api/cockpit/ritual/execute                0 B                0 B
+Γö£ ╞Æ /api/cockpit/security                      0 B                0 B
+Γö£ ╞Æ /api/cockpit/security/recover              0 B                0 B
+Γö£ ╞Æ /api/cockpit/signal-map                    0 B                0 B
+Γö£ ╞Æ /api/cockpit/state                         0 B                0 B
+Γö£ Γùï /api/cockpit/system                        0 B                0 B
+Γö£ ╞Æ /api/cockpit/transmission                  0 B                0 B
+Γö£ ╞Æ /api/commerce/ad/generate                  0 B                0 B
+Γö£ ╞Æ /api/commerce/fulfillment/process          0 B                0 B
+Γö£ ╞Æ /api/commerce/funnel/generate              0 B                0 B
+Γö£ ╞Æ /api/commerce/optimization/run             0 B                0 B
+Γö£ ╞Æ /api/commerce/product/batch-research       0 B                0 B
+Γö£ ╞Æ /api/commerce/product/competitors          0 B                0 B
+Γö£ ╞Æ /api/commerce/product/generate             0 B                0 B
+Γö£ ╞Æ /api/commerce/product/pricing              0 B                0 B
+Γö£ ╞Æ /api/commerce/product/research             0 B                0 B
+Γö£ ╞Æ /api/commerce/product/scan-trends          0 B                0 B
+Γö£ ╞Æ /api/commerce/revenue/attribute            0 B                0 B
+Γö£ ╞Æ /api/commerce/store/build                  0 B                0 B
+Γö£ Γùï /api/debug/env                             0 B                0 B
+Γö£ ╞Æ /api/health                                0 B                0 B
+Γö£ ╞Æ /api/hpe/agent/assign                      0 B                0 B
+Γö£ ╞Æ /api/hpe/automation-rules                  0 B                0 B
+Γö£ ╞Æ /api/hpe/billing/query                     0 B                0 B
+Γö£ ╞Æ /api/hpe/billing/sync                      0 B                0 B
+Γö£ ╞Æ /api/hpe/client/create                     0 B                0 B
+Γö£ ╞Æ /api/hpe/compliance-dashboard              0 B                0 B
+Γö£ ╞Æ /api/hpe/compliance-intelligence           0 B                0 B
+Γö£ ╞Æ /api/hpe/compliance/log                    0 B                0 B
+Γö£ ╞Æ /api/hpe/compliance/query                  0 B                0 B
+Γö£ ╞Æ /api/hpe/health                            0 B                0 B
+Γö£ ╞Æ /api/hpe/interactions/log                  0 B                0 B
+Γö£ ╞Æ /api/hpe/interactions/query                0 B                0 B
+Γö£ ╞Æ /api/hpe/pipeline/move                     0 B                0 B
+Γö£ ╞Æ /api/hpe/stage-transition                  0 B                0 B
+Γö£ ╞Æ /api/hpe/sync                              0 B                0 B
+Γö£ ╞Æ /api/hpe/task/create                       0 B                0 B
+Γö£ ╞Æ /api/hse                                   0 B                0 B
+Γö£ ╞Æ /api/hse/control                           0 B                0 B
+Γö£ ╞Æ /api/hse/departure                         0 B                0 B
+Γö£ Γùï /api/hse/health                            0 B                0 B
+Γö£ ╞Æ /api/hse/history                           0 B                0 B
+Γö£ ╞Æ /api/hse/inheritance                       0 B                0 B
+Γö£ ╞Æ /api/hse/lineage                           0 B                0 B
+Γö£ ╞Æ /api/hse/operator                          0 B                0 B
+Γö£ ╞Æ /api/hse/prediction                        0 B                0 B
+Γö£ ╞Æ /api/hse/return                            0 B                0 B
+Γö£ ╞Æ /api/hse/signals                           0 B                0 B
+Γö£ ╞Æ /api/hse/state                             0 B                0 B
+Γö£ ╞Æ /api/hse/stream                            0 B                0 B
+Γö£ Γùï /api/internal/health                       0 B                0 B
+Γö£ ╞Æ /api/pipelines                             0 B                0 B
+Γö£ ╞Æ /api/pipelines/detect-schema               0 B                0 B
+Γö£ ╞Æ /api/pipelines/errors                      0 B                0 B
+Γö£ ╞Æ /api/pipelines/execute                     0 B                0 B
+Γö£ ╞Æ /api/pipelines/executions                  0 B                0 B
+Γö£ ╞Æ /api/pipelines/retry                       0 B                0 B
+Γö£ ╞Æ /api/subscription/check                    0 B                0 B
+Γö£ ╞Æ /api/sync/health                           0 B                0 B
+Γö£ ╞Æ /api/system/automation-queue               0 B                0 B
+Γö£ ╞Æ /api/system/consistency                    0 B                0 B
+Γö£ ╞Æ /api/system/errors                         0 B                0 B
+Γö£ ╞Æ /api/system/heartbeat                      0 B                0 B
+Γö£ Γùï /api/system/hyperstate                     0 B                0 B
+Γö£ ╞Æ /api/system/hyperstate-prediction          0 B                0 B
+Γö£ ╞Æ /api/system/hyperstate-timeline            0 B                0 B
+Γö£ Γùï /api/system/performance                    0 B                0 B
+Γö£ ╞Æ /api/system/status                         0 B                0 B
+Γö£ ╞Æ /api/system/ui-preferences                 0 B                0 B
+Γö£ ╞Æ /api/system/usage                          0 B                0 B
+Γö£ ╞Æ /api/system/verification                   0 B                0 B
+Γö£ Γùï /api/transformation/functions              0 B                0 B
+Γö£ ╞Æ /api/transformation/map                    0 B                0 B
+Γö£ ╞Æ /api/transformation/pipeline               0 B                0 B
+Γö£ ╞Æ /api/transformation/schema                 0 B                0 B
+Γö£ ╞Æ /api/transformation/transform              0 B                0 B
+Γö£ ╞Æ /api/transformation/validate               0 B                0 B
+Γö£ ╞Æ /api/uoi/evolution                         0 B                0 B
+Γö£ ╞Æ /api/uoi/federation                        0 B                0 B
+Γö£ ╞Æ /api/uoi/genesis                           0 B                0 B
+Γö£ Γùï /api/uoi/health                            0 B                0 B
+Γö£ ╞Æ /api/uoi/heartbeat                         0 B                0 B
+Γö£ ╞Æ /api/uoi/sovereign                         0 B                0 B
+Γö£ ╞Æ /api/uoi/unified                           0 B                0 B
+Γö£ ╞Æ /api/usha/agents/metrics                   0 B                0 B
+Γö£ ╞Æ /api/usha/amp/history                      0 B                0 B
+Γö£ ╞Æ /api/usha/amp/schedule                     0 B                0 B
+Γö£ ╞Æ /api/usha/amp/viz                          0 B                0 B
+Γö£ ╞Æ /api/usha/analytics                        0 B                0 B
+Γö£ ╞Æ /api/usha/audit                            0 B                0 B
+Γö£ ╞Æ /api/usha/audit/[clientId]                 0 B                0 B
+Γö£ ╞Æ /api/usha/audit/export                     0 B                0 B
+Γö£ ╞Æ /api/usha/audit/log                        0 B                0 B
+Γö£ ╞Æ /api/usha/automation/rules                 0 B                0 B
+Γö£ ╞Æ /api/usha/automation/status-change         0 B                0 B
+Γö£ ╞Æ /api/usha/client/[id]                      0 B                0 B
+Γö£ ╞Æ /api/usha/client/[id]/health-score         0 B                0 B
+Γö£ ╞Æ /api/usha/client/[id]/stage                0 B                0 B
+Γö£ ╞Æ /api/usha/clients                          0 B                0 B
+Γö£ ╞Æ /api/usha/compliance/[clientId]            0 B                0 B
+Γö£ ╞Æ /api/usha/compliance/auto-log              0 B                0 B
+Γö£ ╞Æ /api/usha/export                           0 B                0 B
+Γö£ ╞Æ /api/usha/import                           0 B                0 B
+Γö£ Γùï /api/usha/mapping/list                     0 B                0 B
+Γö£ ╞Æ /api/usha/mapping/save                     0 B                0 B
+Γö£ ╞Æ /api/usha/notify                           0 B                0 B
+Γö£ ╞Æ /api/usha/pipeline                         0 B                0 B
+Γö£ ╞Æ /api/usha/pipeline/update                  0 B                0 B
+Γö£ ╞Æ /api/usha/test-connection                  0 B                0 B
+Γö£ ╞Æ /api/usha/workflow/trigger                 0 B                0 B
+Γö£ ╞Æ /api/webhooks/trigger                      0 B                0 B
+Γö£ Γùï /app/healthcare                            9.64 kB         141 kB
+Γö£ Γùï /app/healthcare/agents/home                4.1 kB          100 kB
+Γö£ Γùï /app/healthcare/amp/history                1.99 kB        98.1 kB
+Γö£ Γùï /app/healthcare/amp/viz                    2.04 kB        98.2 kB
+Γö£ Γùï /app/healthcare/mapping                    2.08 kB        98.2 kB
+Γö£ Γùï /audit                                     2.6 kB         98.8 kB
+Γö£ Γùï /broadcast/executive                       1.86 kB        89.3 kB
+Γö£ Γùï /broadcast/operations                      1.8 kB         89.2 kB
+Γö£ Γùï /broadcast/system                          2.17 kB        89.6 kB
+Γö£ Γùï /client/login                              1.31 kB        88.7 kB
+Γö£ ╞Æ /client/portal                             2.9 kB         90.3 kB
+Γö£ Γùï /healthcare                                9.24 kB         140 kB
+Γö£ Γùï /healthcare/agents                         2.4 kB         98.6 kB
+Γö£ Γùï /healthcare/automation                     2.95 kB        99.1 kB
+Γö£ ╞Æ /healthcare/clients/[id]                   3.7 kB          111 kB
+Γö£ Γùï /hse                                       14.5 kB         111 kB
+Γö£ ╞Æ /hse/[subsystem]                           3.13 kB        99.3 kB
+Γö£ Γùï /hse/departure                             1.84 kB        89.3 kB
+Γö£ Γùï /hse/inheritance                           3.13 kB        90.5 kB
+Γö£ Γùï /hse/lineage                               3.61 kB        99.8 kB
+Γö£ Γùï /hse/prediction                            2.64 kB        98.8 kB
+Γö£ Γùï /hse/return                                3.45 kB        99.6 kB
+Γö£ Γùï /hse/rituals                               3.29 kB        99.4 kB
+Γö£ ╞Æ /status                                    938 B          88.4 kB
+Γö£ Γùï /system/adaptive-debug                     1.91 kB        98.1 kB
+Γö£ Γùï /system/automation-debug                   4.4 kB          101 kB
+Γö£ Γùï /system/automation-queue                   2.7 kB         98.9 kB
+Γö£ Γùï /system/consistency                        2.77 kB        98.9 kB
+Γö£ Γùï /system/consistency-debug                  6.08 kB         102 kB
+Γö£ Γùï /system/errors                             2.68 kB        98.8 kB
+Γö£ Γùï /system/heartbeat                          2.1 kB         98.3 kB
+Γö£ Γùï /system/hyperstate-debug                   147 B          87.6 kB
+Γö£ Γùï /system/hyperstate-prediction              2.59 kB        98.7 kB
+Γö£ Γùï /system/hyperstate-timeline                2.57 kB        98.7 kB
+Γö£ Γùï /system/perf-debug                         4.41 kB         101 kB
+Γö£ Γùï /system/performance                        2.04 kB        98.2 kB
+Γö£ Γùï /system/status                             1.96 kB        98.1 kB
+Γö£ Γùï /system/ui-preferences                     2.25 kB        98.4 kB
+Γö£ Γùï /system/usage                              2.23 kB        98.4 kB
+Γö£ Γùï /system/usage-debug                        923 B          97.1 kB
+Γö£ Γùï /system/verification                       2.48 kB        98.6 kB
+Γöö Γùï /uoi                                       3.08 kB        99.2 kB
++ First Load JS shared by all                  87.4 kB
+  Γö£ chunks/2117-db800a724f63228d.js            31.7 kB
+  Γö£ chunks/fd9d1056-06dd6e6a8d0e55b7.js        53.6 kB
+  Γöö other shared chunks (total)                2.06 kB
+
+
+╞Æ Middleware                                   26.8 kB
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand

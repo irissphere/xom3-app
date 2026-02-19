@@ -1,0 +1,17 @@
+{
+  "name": "XOM3",
+  "short_name": "XOM3",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#050810",
+  "theme_color": "#050810",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

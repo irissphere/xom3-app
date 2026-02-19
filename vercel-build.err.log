@@ -1,0 +1,64 @@
+ ⚠ Compiled with warnings
+
+./app/api/uoi/unified/route.ts
+Attempted import error: 'runUOI' is not exported from '@/lib/uoi/orchestrator' (imported as 'runUOI').
+
+Import trace for requested module:
+./app/api/uoi/unified/route.ts
+
+./lib/amp-ai/tse/direction.ts
+Attempted import error: 'defineSovereignRules' is not exported from './regulation' (imported as 'defineSovereignRules').
+
+Import trace for requested module:
+./lib/amp-ai/tse/direction.ts
+./lib/amp-ai/tse/orchestrator.ts
+./app/api/amp-ai/sovereign/route.ts
+
+./lib/amp-ai/tse/optimization.ts
+Attempted import error: 'runAPE' is not exported from '../ape/orchestrator' (imported as 'runAPE').
+
+Import trace for requested module:
+./lib/amp-ai/tse/optimization.ts
+./lib/amp-ai/tse/orchestrator.ts
+./app/api/amp-ai/sovereign/route.ts
+
+./lib/broadcast/auto-posting-engine.ts
+Attempted import error: 'storePost' is not exported from './store' (imported as 'storePost').
+
+Import trace for requested module:
+./lib/broadcast/auto-posting-engine.ts
+./app/api/broadcast/post/route.ts
+
+./lib/broadcast/auto-posting-engine.ts
+Attempted import error: 'storePost' is not exported from './store' (imported as 'storePost').
+
+Import trace for requested module:
+./lib/broadcast/auto-posting-engine.ts
+./app/api/broadcast/post/route.ts
+
+./lib/broadcast/queue/workers/funnel-worker.ts
+Attempted import error: 'processLeadForHPE' is not exported from '../../hpe-integration' (imported as 'processLeadForHPE').
+
+Import trace for requested module:
+./lib/broadcast/queue/workers/funnel-worker.ts
+./lib/broadcast/queue/worker-manager.ts
+./app/api/broadcast/dashboard/stats/route.ts
+
+Error: An API key is required to connect to Airtable
+    at new p (C:\Users\prest\exom3\xom3-app\.next\server\chunks\6506.js:1:10229)
+    at 27495 (C:\Users\prest\exom3\xom3-app\.next\server\chunks\7495.js:1:13405)
+    at t (C:\Users\prest\exom3\xom3-app\.next\server\webpack-runtime.js:1:143)
+    at 1330 (C:\Users\prest\exom3\xom3-app\.next\server\app\api\usha\amp\schedule\route.js:1:888)
+    at t (C:\Users\prest\exom3\xom3-app\.next\server\webpack-runtime.js:1:143)
+    at i (C:\Users\prest\exom3\xom3-app\.next\server\app\api\usha\amp\schedule\route.js:1:7767)
+    at C:\Users\prest\exom3\xom3-app\.next\server\app\api\usha\amp\schedule\route.js:1:7868
+    at t.X (C:\Users\prest\exom3\xom3-app\.next\server\webpack-runtime.js:1:1285)
+    at C:\Users\prest\exom3\xom3-app\.next\server\app\api\usha\amp\schedule\route.js:1:7780
+    at Object.<anonymous> (C:\Users\prest\exom3\xom3-app\.next\server\app\api\usha\amp\schedule\route.js:1:7895)
+
+> Build error occurred
+Error: Failed to collect page data for /api/usha/amp/schedule
+    at C:\Users\prest\exom3\xom3-app\node_modules\next\dist\build\utils.js:1269:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  type: 'Error'
+}

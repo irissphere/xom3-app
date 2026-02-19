@@ -1,0 +1,24 @@
+.root {
+  background: linear-gradient(180deg, var(--akv-surface-2), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--akv-border-0);
+  border-radius: var(--akv-radius-panel);
+  box-shadow: var(--akv-shadow-1);
+  color: var(--akv-text-primary);
+}
+
+.variantGlass {
+  background: linear-gradient(180deg, var(--akv-spectrum-surface-0), var(--akv-spectrum-surface-1));
+  border-color: var(--akv-border-0);
+  box-shadow: var(--akv-shadow-1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.variantSolid {
+  background: linear-gradient(180deg, var(--akv-surface-1), var(--akv-surface-0));
+}
+
+.paddingNone { padding: 0; }
+.paddingSm { padding: var(--akv-space-3); }
+.paddingMd { padding: var(--akv-space-4); }
+.paddingLg { padding: var(--akv-space-6); }

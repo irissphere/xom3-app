@@ -1,0 +1,111 @@
+# ============================================================
+# XOM3 SOCIAL OAUTH CREDENTIALS
+# ============================================================
+# Copy these lines to your .env.local file and fill in values
+# from each platform's developer console.
+#
+# IMPORTANT: Never commit .env.local to version control!
+# ============================================================
+
+# Application URL (REQUIRED for OAuth redirects)
+# Use your production domain or localhost for development
+NEXT_PUBLIC_APP_URL=http://localhost:3002
+
+# ============================================================
+# YOUTUBE / GOOGLE OAuth
+# ============================================================
+# Get these from: https://console.cloud.google.com/apis/credentials
+# Required scopes: youtube.upload, youtube.force-ssl, youtube.readonly
+#
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+# ============================================================
+# TWITTER / X OAuth 2.0
+# ============================================================
+# Get these from: https://developer.twitter.com/en/portal/dashboard
+# Go to your App > Settings > User authentication settings
+#
+TWITTER_CLIENT_ID=
+TWITTER_CLIENT_SECRET=
+
+# ============================================================
+# META (Instagram & Facebook) OAuth
+# ============================================================
+# Get these from: https://developers.facebook.com/apps/
+# One app handles both Instagram and Facebook
+#
+META_APP_ID=
+META_APP_SECRET=
+
+# ============================================================
+# TIKTOK OAuth
+# ============================================================
+# Get these from: https://developers.tiktok.com/
+# Requires business verification for Content Posting API
+#
+TIKTOK_CLIENT_KEY=
+TIKTOK_CLIENT_SECRET=
+
+# ============================================================
+# LINKEDIN OAuth
+# ============================================================
+# Get these from: https://www.linkedin.com/developers/apps/
+# Requires a LinkedIn Company Page
+#
+LINKEDIN_CLIENT_ID=
+LINKEDIN_CLIENT_SECRET=
+
+# ============================================================
+# OAUTH REDIRECT URIs TO CONFIGURE IN EACH PLATFORM
+# ============================================================
+# Add these to each platform's OAuth settings:
+#
+# YouTube/Google:
+#   - http://localhost:3002/api/oauth/youtube/callback
+#   - https://your-domain.com/api/oauth/youtube/callback
+#
+# Twitter/X:
+#   - http://localhost:3002/api/oauth/twitter/callback
+#   - https://your-domain.com/api/oauth/twitter/callback
+#
+# Instagram/Facebook (Meta):
+#   - http://localhost:3002/api/oauth/instagram/callback
+#   - http://localhost:3002/api/oauth/facebook/callback
+#   - https://your-domain.com/api/oauth/instagram/callback
+#   - https://your-domain.com/api/oauth/facebook/callback
+#
+# TikTok:
+#   - https://your-domain.com/api/oauth/tiktok/callback
+#   (Note: TikTok may not support localhost)
+#
+# LinkedIn:
+#   - http://localhost:3002/api/oauth/linkedin/callback
+#   - https://your-domain.com/api/oauth/linkedin/callback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

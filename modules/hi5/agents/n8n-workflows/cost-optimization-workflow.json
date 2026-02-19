@@ -1,0 +1,128 @@
+{
+  "name": "HI5 Cost Optimization Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1
+            }
+          ],
+          "triggerAtHour": 9
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "id": "schedule-trigger",
+      "name": "Daily at 9 AM"
+    },
+    {
+      "parameters": {
+        "url": "https://your-domain.com/api/hi5/agents/cost-optimization",
+        "method": "POST",
+        "jsonParameters": true,
+        "options": {
+          "headers": {
+            "Content-Type": "application/json"
+          }
+        },
+        "bodyParametersJson": "={{ JSON.stringify({ currentMonthUsage: { openai: { callsThisMonth: 450, tokensUsed: 125000, costThisMonth: 25 }, linkedin: { callsThisMonth: 800, successRate: 0.95, costThisMonth: 240 }, rfpSources: { callsThisMonth: 3200, successRate: 0.98, costThisMonth: 96 }, totalCost: 361 }, performance: { leadQuality: 8.2, conversionRate: 0.18, apiEfficiency: 0.82 } }) }}"
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [460, 300],
+      "id": "cost-optimization-agent",
+      "name": "Cost Optimization Agent"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.data.success }}",
+              "operation": "equal",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [680, 300],
+      "id": "check-success",
+      "name": "Check Success"
+    },
+    {
+      "parameters": {
+        "subject": "HI5 Cost Optimization Report - {{ $now.format('MMMM Do, YYYY') }}",
+        "body": "=<h2>HI5 Cost Optimization Report</h2><p><strong>Budget Utilization:</strong> {{ $json.data.budgetUtilization }}%</p><p><strong>Optimizations Applied:</strong> {{ $json.data.optimizationsApplied }}</p><p><strong>Projected Monthly Savings:</strong> {{ $json.data.projectedMonthlySavings }}%</p><p><strong>New Projected Cost:</strong> ${{ $json.data.projectedNewCost }}</p><h3>Applied Optimizations:</h3><ul>{{ $json.data.actions.map(action => `<li>${action.description} (${action.impact}% savings)</li>`).join('') }}</ul>",
+        "to": "operations@yourcompany.com",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [900, 200],
+      "id": "send-success-email",
+      "name": "Send Success Email",
+      "connections": {
+        "main": [
+          {
+            "node": "check-success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      }
+    },
+    {
+      "parameters": {
+        "subject": "HI5 Cost Optimization Failed",
+        "body": "=<h2>Cost Optimization Failed</h2><p><strong>Error:</strong> {{ $json.errors[0].message }}</p><p><strong>Execution ID:</strong> {{ $json.metadata.executionId }}</p><p>Please investigate immediately.</p>",
+        "to": "alerts@yourcompany.com",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [900, 400],
+      "id": "send-failure-email",
+      "name": "Send Failure Email",
+      "connections": {
+        "main": [
+          {
+            "node": "check-success",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      }
+    }
+  ],
+  "connections": {
+    "schedule-trigger": {
+      "main": [
+        {
+          "node": "cost-optimization-agent",
+          "type": "main",
+          "index": 0
+        }
+      ]
+    },
+    "cost-optimization-agent": {
+      "main": [
+        {
+          "node": "check-success",
+          "type": "main",
+          "index": 0
+        }
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
+
+

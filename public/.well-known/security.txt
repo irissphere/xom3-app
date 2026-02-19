@@ -1,0 +1,16 @@
+# XOM3 Security Policy
+# Contact: security@xom3.io
+# Expires: 2025-12-31T23:59:59.000Z
+# Preferred-Languages: en
+# Canonical: https://xom3.io/.well-known/security.txt
+
+Contact: mailto:security@xom3.io
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://xom3.io/.well-known/security.txt
+
+# Encryption
+# PGP Key: https://xom3.io/.well-known/security-pgp-key.asc
+
+# Policy
+# https://xom3.io/security-policy

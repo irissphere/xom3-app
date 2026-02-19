@@ -1,0 +1,67 @@
+<!-- XOM3 Fibonacci Circles Asset -->
+<!-- Symbolizes: growth, scaling, compounding -->
+<!-- Uses Fibonacci sequence for radius spacing: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="fibonacciCircleGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(247, 248, 255, 0.08)" />
+      <stop offset="50%" stop-color="rgba(255, 193, 7, 0.03)" />
+      <stop offset="100%" stop-color="rgba(10, 132, 255, 0.01)" />
+    </radialGradient>
+    <filter id="fibonacciCircleBlur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+    <!-- Animated pulse effect -->
+    <style>
+      @keyframes fibPulse {
+        0%, 100% { opacity: 0.05; }
+        50% { opacity: 0.08; }
+      }
+      .fib-circle { animation: fibPulse 8s ease-in-out infinite; }
+      .fib-circle:nth-child(2) { animation-delay: -1s; }
+      .fib-circle:nth-child(3) { animation-delay: -2s; }
+      .fib-circle:nth-child(4) { animation-delay: -3s; }
+      .fib-circle:nth-child(5) { animation-delay: -4s; }
+    </style>
+  </defs>
+  
+  <!-- Fibonacci Circles - Center: 600, 400 -->
+  <!-- Radii based on Fibonacci × 8: 8, 8, 16, 24, 40, 64, 104, 168, 272, 440 -->
+  
+  <g stroke="url(#fibonacciCircleGradient)" stroke-width="1" fill="none" filter="url(#fibonacciCircleBlur)">
+    <!-- Core circles (innermost) -->
+    <circle class="fib-circle" cx="600" cy="400" r="8" opacity="0.08" />
+    <circle class="fib-circle" cx="600" cy="400" r="16" opacity="0.07" />
+    <circle class="fib-circle" cx="600" cy="400" r="24" opacity="0.065" />
+    <circle class="fib-circle" cx="600" cy="400" r="40" opacity="0.06" />
+    <circle class="fib-circle" cx="600" cy="400" r="64" opacity="0.055" />
+    
+    <!-- Expansion circles -->
+    <circle cx="600" cy="400" r="104" opacity="0.05" />
+    <circle cx="600" cy="400" r="168" opacity="0.045" />
+    <circle cx="600" cy="400" r="272" opacity="0.04" />
+    <circle cx="600" cy="400" r="440" opacity="0.035" />
+    
+    <!-- Outer boundary circle -->
+    <circle cx="600" cy="400" r="712" opacity="0.02" />
+  </g>
+  
+  <!-- Golden angle radials (137.5°) -->
+  <g stroke="url(#fibonacciCircleGradient)" stroke-width="0.5" opacity="0.03">
+    <line x1="600" y1="400" x2="1040" y2="400" />
+    <line x1="600" y1="400" x2="268" y2="147" transform="rotate(137.5 600 400)" />
+    <line x1="600" y1="400" x2="268" y2="147" transform="rotate(275 600 400)" />
+    <line x1="600" y1="400" x2="268" y2="147" transform="rotate(412.5 600 400)" />
+    <line x1="600" y1="400" x2="268" y2="147" transform="rotate(550 600 400)" />
+  </g>
+  
+  <!-- Fibonacci point markers -->
+  <g fill="url(#fibonacciCircleGradient)" opacity="0.04">
+    <circle cx="600" cy="400" r="2" />
+    <circle cx="664" cy="400" r="2" />
+    <circle cx="704" cy="400" r="2" />
+    <circle cx="768" cy="400" r="2" />
+    <circle cx="872" cy="400" r="2" />
+  </g>
+</svg>

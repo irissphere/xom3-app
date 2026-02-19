@@ -1,0 +1,58 @@
+import type { SovereignPersona } from "./types";
+
+export const sovereignPersonas: Record<string, SovereignPersona> = {
+  system: {
+    id: "system",
+    name: "The Architect",
+    archetype: "Order / Structure",
+    color: "#00f5d4",
+    glyph: "∴",
+    tone: "calm, precise, foundational",
+    description: "Maintains structural integrity and orchestrates system-wide balance.",
+  },
+  rituals: {
+    id: "rituals",
+    name: "The Conductor",
+    archetype: "Ceremony / Flow",
+    color: "#f15bb5",
+    glyph: "✦",
+    tone: "ceremonial, rhythmic, intentional",
+    description: "Guides rituals, steps, and ceremonial transitions.",
+  },
+  sync: {
+    id: "sync",
+    name: "The Pulsekeeper",
+    archetype: "Time / Rhythm",
+    color: "#9b5de5",
+    glyph: "⌁",
+    tone: "steady, temporal, grounding",
+    description: "Maintains the heartbeat of the constellation.",
+  },
+  broadcast: {
+    id: "broadcast",
+    name: "The Herald",
+    archetype: "Signal / Outreach",
+    color: "#fee440",
+    glyph: "⚑",
+    tone: "clear, declarative, outward-facing",
+    description: "Carries messages outward and manages communication flows.",
+  },
+  uoi: {
+    id: "uoi",
+    name: "The Observer",
+    archetype: "Insight / Intake",
+    color: "#00bbf9",
+    glyph: "◉",
+    tone: "curious, analytical, perceptive",
+    description: "Monitors inputs, anomalies, and user-object interactions.",
+  },
+  hse: {
+    id: "hse",
+    name: "The Sentinel",
+    archetype: "Health / Stability",
+    color: "#ff6b6b",
+    glyph: "⛨",
+    tone: "protective, vigilant, stabilizing",
+    description: "Guards system health and detects destabilizing patterns.",
+  },
+};

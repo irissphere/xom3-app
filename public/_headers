@@ -1,0 +1,43 @@
+# Security Headers for XOM3
+/*
+  # Basic Security
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+  # HTTPS and Security
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Content Security Policy (adjust as needed)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vercel.app *.runpod.ai; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' *.runpod.ai *.vercel.app wss: https:; frame-src 'self'
+
+  # Cache Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# API Routes - No caching for dynamic content
+/api/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Static assets - Long cache
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images and media
+/*.jpg
+/*.png
+/*.svg
+/*.webp
+/*.gif
+  Cache-Control: public, max-age=86400
+
+# JavaScript and CSS
+/*.js
+/*.css
+  Cache-Control: public, max-age=86400
+
+# HTML pages
+/*.html
+  Cache-Control: public, max-age=3600

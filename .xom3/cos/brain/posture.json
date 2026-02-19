@@ -1,0 +1,51 @@
+{
+  "lastEvaluationAt": 1766535072339,
+  "sceneWeights": {
+    "operator-demo": -0.5,
+    "product-launch": 0,
+    "stabilization": 0
+  },
+  "graphWeights": {
+    "parallel-launch-graph": 1,
+    "launch-graph": 0,
+    "operator-graph": 0
+  },
+  "routingHints": {
+    "optimization": true
+  },
+  "posture": {
+    "at": 1766535072331,
+    "epochId": "expansion",
+    "operatorIntent": null,
+    "outbound": {
+      "total": 0,
+      "queued": 0,
+      "sending": 0,
+      "sent": 0,
+      "failed": 0
+    },
+    "campaigns": {
+      "activeCount": 0
+    },
+    "funnels": {
+      "conversionRate": null
+    },
+    "rituals": {
+      "runningCount": 0
+    }
+  },
+  "activePolicies": [
+    {
+      "policyId": "high-gtm-posture",
+      "matched": false
+    },
+    {
+      "policyId": "low-conversion",
+      "matched": true
+    },
+    {
+      "policyId": "operator-demo-focus",
+      "matched": false
+    }
+  ]
+}

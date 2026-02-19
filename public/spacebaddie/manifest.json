@@ -1,0 +1,17 @@
+{
+  "name": "SpaceBaddie",
+  "short_name": "SpaceBaddie",
+  "start_url": "/spacebaddie",
+  "scope": "/spacebaddie",
+  "display": "standalone",
+  "background_color": "#050810",
+  "theme_color": "#050810",
+  "icons": [
+    {
+      "src": "/spacebaddie/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

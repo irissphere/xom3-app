@@ -1,0 +1,31 @@
+# HI5 Dashboard Environment Variables
+# Copy this file to .env.local for local development
+# For Vercel deployment, add these to your HI5 project environment variables
+
+# Airtable Configuration (HI5 Base)
+AIRTABLE_API_KEY=your_airtable_api_key_here
+AIRTABLE_BASE_ID=your_hi5_base_id_here
+
+# Database URLs (if using separate databases for HI5)
+DATABASE_URL=your_database_url_here
+
+# N8N Webhook URLs (HI5-specific workflows)
+N8N_WEBHOOK_LEAD_INTAKE=https://your-n8n-instance.com/webhook/hi5/lead-intake
+N8N_WEBHOOK_RFQ_GENERATION=https://your-n8n-instance.com/webhook/hi5/rfq-generation
+
+# Email/SMS Configuration
+RESEND_API_KEY=your_resend_api_key_here
+TWILIO_ACCOUNT_SID=your_twilio_account_sid_here
+TWILIO_AUTH_TOKEN=your_twilio_auth_token_here
+TWILIO_PHONE_NUMBER=your_twilio_phone_number_here
+
+# Vercel Analytics (optional)
+NEXT_PUBLIC_VERCEL_ANALYTICS_ID=your_vercel_analytics_id_here
+
+# Brand Configuration
+NEXT_PUBLIC_BRAND_NAME="HI5"
+NEXT_PUBLIC_BRAND_DOMAIN="hi5-dashboard.vercel.app"
+
+
+
+

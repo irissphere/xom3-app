@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Allow: /shop/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+
+# AI Crawlers - Allow shop content for marketplace indexing
+User-agent: GPTBot
+Allow: /shop/
+Allow: /api/shop/feed
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /shop/
+Allow: /api/shop/feed
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://xom3.io/sitemap.xml

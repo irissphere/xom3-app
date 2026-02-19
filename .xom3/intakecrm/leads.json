@@ -1,0 +1,240 @@
+[
+  {
+    "leadId": "lead_1766898583893_1",
+    "tenantId": "xom3",
+    "name": "UI Smoke Lead",
+    "email": "ui-smoke@example.com",
+    "phone": "+15555550111",
+    "source": "ui_smoke",
+    "posture": "new",
+    "tags": [],
+    "createdAt": "2025-12-28T05:09:43.893Z",
+    "updatedAt": "2025-12-28T05:09:43.918Z",
+    "timeline": [
+      {
+        "eventId": "evt_1766898583918_vbxi9s",
+        "type": "intakecrm.task.created",
+        "timestamp": "2025-12-28T05:09:43.918Z",
+        "payload": {
+          "taskId": "task_1766898583917_2",
+          "taskType": "text",
+          "dueAt": "2025-12-28T05:19:43.917Z",
+          "priority": "normal"
+        }
+      },
+      {
+        "eventId": "evt_1766898583917_jsq699",
+        "type": "intakecrm.task.created",
+        "timestamp": "2025-12-28T05:09:43.917Z",
+        "payload": {
+          "taskId": "task_1766898583917_1",
+          "taskType": "call",
+          "dueAt": "2025-12-28T05:14:43.917Z",
+          "priority": "high"
+        }
+      },
+      {
+        "eventId": "evt_1766898583895_yc4r8q",
+        "type": "intakecrm.lead.created",
+        "timestamp": "2025-12-28T05:09:43.895Z",
+        "payload": {}
+      },
+      {
+        "eventId": "evt_1766898583895_z0m6ds",
+        "type": "intakecrm.intake.received",
+        "timestamp": "2025-12-28T05:09:43.895Z",
+        "payload": {
+          "source": "ui_smoke"
+        }
+      }
+    ]
+  },
+  {
+    "leadId": "lead_eG9tMzplOnRlc3RsZWFkZX",
+    "tenant": "xom3",
+    "name": "Test Lead",
+    "email": "testlead@example.com",
+    "phone": "+15555550123",
+    "source": "smoke",
+    "timestamp": 1766898477793,
+    "posture": "new",
+    "assignedTo": null,
+    "tags": [],
+    "createdAt": "2025-12-28T05:07:57.794Z",
+    "updatedAt": "2025-12-28T05:07:57.794Z",
+    "lastIntakeAt": "2025-12-28T05:07:57.794Z",
+    "dedupeKey": "e:testlead@example.com|p:+15555550123"
+  },
+  {
+    "leadId": "lead_1766534709386_2",
+    "tenantId": "xom3",
+    "name": "Second Lead",
+    "email": "second@example.com",
+    "phone": "+15557654321",
+    "source": "api",
+    "posture": "new",
+    "tags": [],
+    "createdAt": "2025-12-24T00:05:09.386Z",
+    "updatedAt": "2025-12-24T01:10:52.000Z",
+    "timeline": [
+      {
+        "eventId": "evt_1766538652000_okp089",
+        "type": "intakecrm.task.escalated",
+        "timestamp": "2025-12-24T01:10:52.000Z",
+        "payload": {
+          "taskId": "task_1766534709389_3",
+          "taskType": "call",
+          "dueAt": "2025-12-24T00:10:09.388Z",
+          "overdueForMs": 3642606
+        }
+      },
+      {
+        "eventId": "evt_1766538651997_2uqxuf",
+        "type": "intakecrm.task.escalated",
+        "timestamp": "2025-12-24T01:10:51.997Z",
+        "payload": {
+          "taskId": "task_1766534709389_4",
+          "taskType": "text",
+          "dueAt": "2025-12-24T00:15:09.389Z",
+          "overdueForMs": 3342605
+        }
+      },
+      {
+        "eventId": "evt_1766536074669_7ot6h3",
+        "type": "intakecrm.task.overdue",
+        "timestamp": "2025-12-24T00:27:54.669Z",
+        "payload": {
+          "taskId": "task_1766534709389_3",
+          "taskType": "call",
+          "dueAt": "2025-12-24T00:10:09.388Z"
+        }
+      },
+      {
+        "eventId": "evt_1766536074667_xido1h",
+        "type": "intakecrm.task.overdue",
+        "timestamp": "2025-12-24T00:27:54.667Z",
+        "payload": {
+          "taskId": "task_1766534709389_4",
+          "taskType": "text",
+          "dueAt": "2025-12-24T00:15:09.389Z"
+        }
+      },
+      {
+        "eventId": "evt_1766534709389_9cu020",
+        "type": "intakecrm.task.created",
+        "timestamp": "2025-12-24T00:05:09.389Z",
+        "payload": {
+          "taskId": "task_1766534709389_4",
+          "taskType": "text",
+          "dueAt": "2025-12-24T00:15:09.389Z",
+          "priority": "normal"
+        }
+      },
+      {
+        "eventId": "evt_1766534709389_h81z9l",
+        "type": "intakecrm.task.created",
+        "timestamp": "2025-12-24T00:05:09.389Z",
+        "payload": {
+          "taskId": "task_1766534709389_3",
+          "taskType": "call",
+          "dueAt": "2025-12-24T00:10:09.388Z",
+          "priority": "high"
+        }
+      },
+      {
+        "eventId": "evt_1766534709387_5zi6l4",
+        "type": "intakecrm.lead.created",
+        "timestamp": "2025-12-24T00:05:09.387Z",
+        "payload": {}
+      },
+      {
+        "eventId": "evt_1766534709387_t0v16n",
+        "type": "intakecrm.intake.received",
+        "timestamp": "2025-12-24T00:05:09.387Z",
+        "payload": {
+          "source": "api"
+        }
+      }
+    ]
+  },
+  {
+    "leadId": "lead_1766534565788_1",
+    "tenantId": "xom3",
+    "name": "Test Lead",
+    "email": "test@example.com",
+    "phone": "+15551234567",
+    "source": "api",
+    "posture": "new",
+    "tags": [],
+    "createdAt": "2025-12-24T00:02:45.787Z",
+    "updatedAt": "2025-12-24T01:10:52.002Z",
+    "timeline": [
+      {
+        "eventId": "evt_1766538652002_j9pyy6",
+        "type": "intakecrm.task.escalated",
+        "timestamp": "2025-12-24T01:10:52.002Z",
+        "payload": {
+          "taskId": "task_1766534565794_2",
+          "taskType": "text",
+          "dueAt": "2025-12-24T00:12:45.794Z",
+          "overdueForMs": 3486200
+        }
+      },
+      {
+        "eventId": "evt_1766536074670_vuiyoe",
+        "type": "intakecrm.task.overdue",
+        "timestamp": "2025-12-24T00:27:54.670Z",
+        "payload": {
+          "taskId": "task_1766534565794_2",
+          "taskType": "text",
+          "dueAt": "2025-12-24T00:12:45.794Z"
+        }
+      },
+      {
+        "eventId": "evt_1766534589842_fbhhsu",
+        "type": "intakecrm.task.completed",
+        "timestamp": "2025-12-24T00:03:09.842Z",
+        "payload": {
+          "taskId": "task_1766534565793_1",
+          "taskType": "call"
+        }
+      },
+      {
+        "eventId": "evt_1766534565795_5dgi3d",
+        "type": "intakecrm.task.created",
+        "timestamp": "2025-12-24T00:02:45.795Z",
+        "payload": {
+          "taskId": "task_1766534565794_2",
+          "taskType": "text",
+          "dueAt": "2025-12-24T00:12:45.794Z",
+          "priority": "normal"
+        }
+      },
+      {
+        "eventId": "evt_1766534565795_6tmmsn",
+        "type": "intakecrm.task.created",
+        "timestamp": "2025-12-24T00:02:45.795Z",
+        "payload": {
+          "taskId": "task_1766534565793_1",
+          "taskType": "call",
+          "dueAt": "2025-12-24T00:07:45.791Z",
+          "priority": "high"
+        }
+      },
+      {
+        "eventId": "evt_1766534565790_0uc55h",
+        "type": "intakecrm.lead.created",
+        "timestamp": "2025-12-24T00:02:45.790Z",
+        "payload": {}
+      },
+      {
+        "eventId": "evt_1766534565789_zhq7mb",
+        "type": "intakecrm.intake.received",
+        "timestamp": "2025-12-24T00:02:45.789Z",
+        "payload": {
+          "source": "api"
+        }
+      }
+    ]
+  }
+]

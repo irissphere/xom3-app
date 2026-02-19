@@ -1,0 +1,2552 @@
+[
+  {
+    "timestamp": "2025-12-12T19:29:18.100Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 312.79574893647595,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T19:29:18.090Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 25,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:29:18.099Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 13,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:29:18.099Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 0.8158466139710598,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T19:29:18.099Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 32.12636081136982,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:29:18.099Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 11.824794536120883,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:29:18.099Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 19,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T19:29:18.099Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 81,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T19:29:18.099Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T19:52:21.415Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 140.5038483479879,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 5,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 7,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.615100713988107,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 15.37568821094359,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 10.005282146199175,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 29,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 85,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T19:52:21.415Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T19:52:21.838Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 193.6468450202659,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 27,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 13,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.7965466709926186,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 20.56818603046219,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 10.372501323195051,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 43,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 89,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T19:52:21.838Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T19:57:40.045Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 308.4550667146639,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 16,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 10,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.5357859388219848,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 31.880644559425974,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 10.265554200272117,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 55,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 87,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T19:57:40.045Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T20:06:43.623Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 207.44781088265037,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T20:06:43.618Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 5,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:06:43.623Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 12,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:06:43.623Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 0.5549854609292528,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T20:06:43.623Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 45.201692590661004,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:06:43.623Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 7.623691951198024,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:06:43.623Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 22,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T20:06:43.623Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 90,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T20:06:43.623Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T20:07:07.610Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 168.34290328462373,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T20:07:07.609Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 26,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:07:07.610Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 0,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:07:07.610Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.2115608014545556,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T20:07:07.610Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 49.84673432147151,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:07:07.610Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 10.469941049082312,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:07:07.610Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 53,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T20:07:07.610Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 94,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T20:07:07.610Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T20:07:31.498Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 196.0544975489172,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 19,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 10,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 0.38015171270735304,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 28.574418518566187,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 16.289129114430494,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 53,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 94,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T20:07:31.498Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T20:08:26.353Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 109.77993637090103,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 25,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 6,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.9374665293106457,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 48.62878913587572,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 13.439861701832585,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 31,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 94,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T20:08:26.352Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-12T20:25:42.914Z",
+    "uptime": 0,
+    "status": "healthy",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 242.49240631735483,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-12T20:25:42.913Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 19,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:25:42.914Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 13,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:25:42.914Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.8730351583312645,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-12T20:25:42.914Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 28.151153375040174,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-12T20:25:42.914Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 13.02291466787151,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-12T20:25:42.914Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 28,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-12T20:25:42.914Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 79,
+        "unit": "%",
+        "status": "healthy",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-12T20:25:42.914Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-15T23:59:05.450Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 326.1820940935365,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-15T23:59:05.401Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 24,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-15T23:59:05.450Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 14,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-15T23:59:05.450Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 0.4694448727987943,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-15T23:59:05.450Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 20.96145430413337,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-15T23:59:05.450Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 13.809277362464895,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-15T23:59:05.450Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 48,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-15T23:59:05.450Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 85,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-15T23:59:05.450Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-17T01:55:34.565Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 308.31879640761326,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 28,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 5,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.838388640145994,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 34.90597421754762,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 8.233857523006236,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 31,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 90,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-17T01:55:34.565Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-17T02:26:10.721Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 227.74699565998344,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 22,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 4,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 0.23349040991203251,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 35.65187405827197,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 13.721387035419985,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 34,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 85,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-17T02:26:10.721Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-17T08:59:45.235Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 303.63352016619706,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 13,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 3,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.8714966130054929,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 30.000916148363856,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 9.862795416095533,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 19,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 91,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-17T08:59:45.235Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-17T08:59:45.351Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 234.60242713577767,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-17T08:59:45.350Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 7,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T08:59:45.350Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 9,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T08:59:45.351Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 0.9128998223246709,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-17T08:59:45.351Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 16.59709923478017,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-17T08:59:45.351Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 9.647115156300387,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-17T08:59:45.351Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 24,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-17T08:59:45.351Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 87,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-17T08:59:45.351Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-18T17:52:25.337Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 104.39984601075965,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 1,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 7,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.6089624063338572,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 26.486418785413797,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 10.438727262298547,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 36,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 80,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-18T17:52:25.337Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T13:06:01.217Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 110.44701043236822,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 23,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 12,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 0.7018597933417838,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 28.84811665428847,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 17.76828695097079,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 43,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 94,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T13:06:01.217Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T13:06:01.412Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 177.94412713599604,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 29,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 5,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.1229734983944732,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 14.79929354972068,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 7.436669781188776,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 55,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 91,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T13:06:01.412Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T19:00:55.511Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 65.77288351169175,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 3,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 5,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.3908380418299893,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 43.30650556171207,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 12.278675546971833,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 11,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 91,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T19:00:55.511Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T19:17:37.102Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 122.1094901897593,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 23,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 14,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.321052059586381,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 14.632159154103359,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 10.2003786209523,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 21,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 89,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T19:17:37.102Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T19:17:37.289Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 189.64649760839575,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 16,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 9,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.4140020275042993,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 14.536526065898379,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 8.09656362178784,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 53,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 90,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T19:17:37.289Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T20:15:19.112Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 278.9461645279291,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 7,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 11,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.7541384969552567,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 37.85993389287615,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 5.80517649388665,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 55,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 89,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T20:15:19.112Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T20:45:13.762Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 203.762063476259,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T20:45:13.761Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 8,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T20:45:13.761Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 14,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T20:45:13.761Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.1808385303877182,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T20:45:13.761Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 32.311239585596816,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T20:45:13.762Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 9.798517943747003,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T20:45:13.762Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 16,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T20:45:13.762Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 91,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T20:45:13.762Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-19T20:47:39.716Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 345.51272990468794,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 22,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 8,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.6002181544291876,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 35.52690959762627,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 17.65144645240512,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 38,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 81,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-19T20:47:39.716Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T01:21:27.379Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 168.9190198446302,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 12,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 2,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 2.9290178865487086,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 27.782214760669703,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 5.864017353202216,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 42,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 92,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-20T01:21:27.379Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  },
+  {
+    "timestamp": "2025-12-20T02:38:17.414Z",
+    "uptime": 0,
+    "status": "degraded",
+    "metrics": {
+      "apiLatency": {
+        "name": "API Latency",
+        "value": 63.89279585278949,
+        "unit": "ms",
+        "status": "healthy",
+        "threshold": {
+          "warning": 500,
+          "critical": 1000
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      },
+      "webhookActivity": {
+        "name": "Webhook Activity",
+        "value": 2,
+        "unit": "events/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      },
+      "automationQueueLength": {
+        "name": "Automation Queue",
+        "value": 1,
+        "unit": "pending",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      },
+      "errorRate": {
+        "name": "Error Rate",
+        "value": 1.6377344913570193,
+        "unit": "errors/min",
+        "status": "healthy",
+        "threshold": {
+          "warning": 5,
+          "critical": 10
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      },
+      "databaseReadLoad": {
+        "name": "DB Read Load",
+        "value": 48.371741180805266,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 50,
+          "critical": 100
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      },
+      "databaseWriteLoad": {
+        "name": "DB Write Load",
+        "value": 19.826150858048358,
+        "unit": "ops/sec",
+        "status": "healthy",
+        "threshold": {
+          "warning": 20,
+          "critical": 50
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      },
+      "activeConnections": {
+        "name": "Active Connections",
+        "value": 25,
+        "unit": "connections",
+        "status": "healthy",
+        "threshold": {
+          "warning": 100,
+          "critical": 200
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      },
+      "memoryUsage": {
+        "name": "Memory Usage",
+        "value": 89,
+        "unit": "%",
+        "status": "warning",
+        "threshold": {
+          "warning": 80,
+          "critical": 95
+        },
+        "timestamp": "2025-12-20T02:38:17.414Z"
+      }
+    },
+    "subsystems": {
+      "api": "healthy",
+      "database": "healthy",
+      "workflows": "healthy",
+      "automation": "healthy",
+      "webhooks": "healthy"
+    }
+  }
+]

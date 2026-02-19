@@ -1,0 +1,9 @@
+{
+  "tier": "trial",
+  "userId": "demo-user",
+  "subscribed": true,
+  "trialStartedAt": "2025-12-27T03:42:48.450Z",
+  "trialEndsAt": "2026-01-10T03:42:48.450Z",
+  "updatedAt": "2025-12-27T03:42:48.450Z",
+  "source": "manual"
+}

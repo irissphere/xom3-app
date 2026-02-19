@@ -1,0 +1,128 @@
+[
+  {
+    "campaignId": "welcome",
+    "subjectType": "contact",
+    "subjectId": "lead_1766531472272",
+    "startedAt": 1766531472272,
+    "status": "completed",
+    "steps": [
+      {
+        "stepId": "intro",
+        "actionType": "outboundPost",
+        "status": "sent",
+        "scheduledAt": 1766531472272,
+        "outboundItemIds": [
+          "gtm_out_1766531472275_cq1m84",
+          "gtm_out_1766531472275_k03g9i"
+        ],
+        "completedAt": 1766531472287
+      },
+      {
+        "stepId": "value",
+        "actionType": "outboundPost",
+        "status": "sent",
+        "scheduledAt": 1766617872272,
+        "outboundItemIds": [
+          "gtm_out_1766531472277_zw7tg9"
+        ],
+        "completedAt": 1766898477809
+      },
+      {
+        "stepId": "invite",
+        "actionType": "outboundPost",
+        "status": "sent",
+        "scheduledAt": 1766790672272,
+        "outboundItemIds": [
+          "gtm_out_1766531472279_0ofypt",
+          "gtm_out_1766531472279_au8i9p"
+        ],
+        "completedAt": 1766898477814
+      }
+    ],
+    "instanceId": "gtm_cmp_1766531472273_1",
+    "completedAt": 1766898477812
+  },
+  {
+    "campaignId": "welcome",
+    "subjectType": "contact",
+    "subjectId": "lead_1766531627064",
+    "startedAt": 1766531627064,
+    "status": "completed",
+    "steps": [
+      {
+        "stepId": "intro",
+        "actionType": "outboundPost",
+        "status": "sent",
+        "scheduledAt": 1766531627064,
+        "outboundItemIds": [
+          "gtm_out_1766531627067_68jbes",
+          "gtm_out_1766531627067_ayx1pg"
+        ],
+        "completedAt": 1766535072331
+      },
+      {
+        "stepId": "value",
+        "actionType": "outboundPost",
+        "status": "sent",
+        "scheduledAt": 1766618027064,
+        "outboundItemIds": [
+          "gtm_out_1766531627069_jbkaco"
+        ],
+        "completedAt": 1766898477811
+      },
+      {
+        "stepId": "invite",
+        "actionType": "outboundPost",
+        "status": "sent",
+        "scheduledAt": 1766790827064,
+        "outboundItemIds": [
+          "gtm_out_1766531627070_bcx1ng",
+          "gtm_out_1766531627070_gzqd1t"
+        ],
+        "completedAt": 1766898477816
+      }
+    ],
+    "instanceId": "gtm_cmp_1766531627064_2",
+    "completedAt": 1766898477815
+  },
+  {
+    "campaignId": "welcome",
+    "subjectType": "contact",
+    "subjectId": "lead_1766898477780",
+    "startedAt": 1766898477781,
+    "status": "active",
+    "steps": [
+      {
+        "stepId": "intro",
+        "actionType": "outboundPost",
+        "status": "sent",
+        "scheduledAt": 1766898477781,
+        "outboundItemIds": [
+          "gtm_out_1766898477785_xcmki0",
+          "gtm_out_1766898477785_vbvmxa"
+        ],
+        "completedAt": 1766898477818
+      },
+      {
+        "stepId": "value",
+        "actionType": "outboundPost",
+        "status": "scheduled",
+        "scheduledAt": 1766984877781,
+        "outboundItemIds": [
+          "gtm_out_1766898477787_g2q4v6"
+        ]
+      },
+      {
+        "stepId": "invite",
+        "actionType": "outboundPost",
+        "status": "scheduled",
+        "scheduledAt": 1767157677781,
+        "outboundItemIds": [
+          "gtm_out_1766898477789_390tjf",
+          "gtm_out_1766898477789_o3wv4d"
+        ]
+      }
+    ],
+    "instanceId": "gtm_cmp_1766898477783_1"
+  }
+]

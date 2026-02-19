@@ -1,0 +1,341 @@
+[
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "Test outbound copy from Broadcast composer to GTM outbound lane.",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ Test outbound copy from Broadcast composer to GTM outbound lane.",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "sendNow",
+    "scheduledAt": "2025-12-23T22:48:04.755Z",
+    "status": "sent",
+    "id": "gtm_out_1766530084755_4tfs5e",
+    "createdAt": "2025-12-23T22:48:04.755Z",
+    "updatedAt": "2025-12-23T22:49:55.650Z",
+    "externalId": "post-1766530195650-7fgve4o9c"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "Test outbound copy from Broadcast composer to GTM outbound lane.",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ Test outbound copy from Broadcast composer to GTM outbound lane.",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "sendNow",
+    "scheduledAt": "2025-12-23T22:48:04.755Z",
+    "status": "sent",
+    "id": "gtm_out_1766530084755_jwztht",
+    "createdAt": "2025-12-23T22:48:04.755Z",
+    "updatedAt": "2025-12-23T22:49:55.658Z",
+    "externalId": "post-1766530195657-j74pqgki0"
+  },
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "SendNow should dispatch immediately.",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ SendNow should dispatch immediately.",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "sendNow",
+    "scheduledAt": "2025-12-23T22:49:55.647Z",
+    "status": "sent",
+    "id": "gtm_out_1766530195648_ng3146",
+    "createdAt": "2025-12-23T22:49:55.648Z",
+    "updatedAt": "2025-12-23T22:49:55.660Z",
+    "externalId": "post-1766530195660-14l3nnxmr"
+  },
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "[Welcome Campaign] welcome_intro • subject=contact:lead_1766531472272",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_intro • subject=contact:lead_1766531472272",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-23T23:11:12.272Z",
+    "status": "sent",
+    "id": "gtm_out_1766531472275_cq1m84",
+    "createdAt": "2025-12-23T23:11:12.275Z",
+    "updatedAt": "2025-12-23T23:11:12.285Z",
+    "externalId": "post-1766531472284-awtgg60lf"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_intro • subject=contact:lead_1766531472272",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_intro • subject=contact:lead_1766531472272",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-23T23:11:12.272Z",
+    "status": "sent",
+    "id": "gtm_out_1766531472275_k03g9i",
+    "createdAt": "2025-12-23T23:11:12.275Z",
+    "updatedAt": "2025-12-23T23:11:12.287Z",
+    "externalId": "post-1766531472287-8wxxvuvcd"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_value • subject=contact:lead_1766531472272",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_value • subject=contact:lead_1766531472272",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-24T23:11:12.272Z",
+    "status": "sent",
+    "id": "gtm_out_1766531472277_zw7tg9",
+    "createdAt": "2025-12-23T23:11:12.277Z",
+    "updatedAt": "2025-12-28T05:07:57.808Z",
+    "externalId": "post-1766898477807-dk67gx3mn"
+  },
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "[Welcome Campaign] welcome_invite • subject=contact:lead_1766531472272",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_invite • subject=contact:lead_1766531472272",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-26T23:11:12.272Z",
+    "status": "sent",
+    "id": "gtm_out_1766531472279_0ofypt",
+    "createdAt": "2025-12-23T23:11:12.279Z",
+    "updatedAt": "2025-12-28T05:07:57.812Z",
+    "externalId": "post-1766898477812-izqkxhfe9"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_invite • subject=contact:lead_1766531472272",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_invite • subject=contact:lead_1766531472272",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-26T23:11:12.272Z",
+    "status": "sent",
+    "id": "gtm_out_1766531472279_au8i9p",
+    "createdAt": "2025-12-23T23:11:12.279Z",
+    "updatedAt": "2025-12-28T05:07:57.813Z",
+    "externalId": "post-1766898477813-zt3w2op5p"
+  },
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "[Welcome Campaign] welcome_intro • subject=contact:lead_1766531627064",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_intro • subject=contact:lead_1766531627064",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-23T23:13:47.064Z",
+    "status": "sent",
+    "id": "gtm_out_1766531627067_68jbes",
+    "createdAt": "2025-12-23T23:13:47.067Z",
+    "updatedAt": "2025-12-24T00:11:12.319Z",
+    "externalId": "post-1766535072316-0l4fobfdg"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_intro • subject=contact:lead_1766531627064",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_intro • subject=contact:lead_1766531627064",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-23T23:13:47.064Z",
+    "status": "sent",
+    "id": "gtm_out_1766531627067_ayx1pg",
+    "createdAt": "2025-12-23T23:13:47.067Z",
+    "updatedAt": "2025-12-24T00:11:12.330Z",
+    "externalId": "post-1766535072330-0o6tz3g4i"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_value • subject=contact:lead_1766531627064",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_value • subject=contact:lead_1766531627064",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-24T23:13:47.064Z",
+    "status": "sent",
+    "id": "gtm_out_1766531627069_jbkaco",
+    "createdAt": "2025-12-23T23:13:47.069Z",
+    "updatedAt": "2025-12-28T05:07:57.811Z",
+    "externalId": "post-1766898477811-4jwgxm3kz"
+  },
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "[Welcome Campaign] welcome_invite • subject=contact:lead_1766531627064",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_invite • subject=contact:lead_1766531627064",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-26T23:13:47.064Z",
+    "status": "sent",
+    "id": "gtm_out_1766531627070_bcx1ng",
+    "createdAt": "2025-12-23T23:13:47.070Z",
+    "updatedAt": "2025-12-28T05:07:57.814Z",
+    "externalId": "post-1766898477814-x09s829g0"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_invite • subject=contact:lead_1766531627064",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_invite • subject=contact:lead_1766531627064",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-26T23:13:47.064Z",
+    "status": "sent",
+    "id": "gtm_out_1766531627070_gzqd1t",
+    "createdAt": "2025-12-23T23:13:47.070Z",
+    "updatedAt": "2025-12-28T05:07:57.816Z",
+    "externalId": "post-1766898477816-umjwoon39"
+  },
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "[Welcome Campaign] welcome_intro • subject=contact:lead_1766898477780",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_intro • subject=contact:lead_1766898477780",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-28T05:07:57.781Z",
+    "status": "sent",
+    "id": "gtm_out_1766898477785_xcmki0",
+    "createdAt": "2025-12-28T05:07:57.785Z",
+    "updatedAt": "2025-12-28T05:07:57.816Z",
+    "externalId": "post-1766898477816-4mz5lmijk"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_intro • subject=contact:lead_1766898477780",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_intro • subject=contact:lead_1766898477780",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-28T05:07:57.781Z",
+    "status": "sent",
+    "id": "gtm_out_1766898477785_vbvmxa",
+    "createdAt": "2025-12-28T05:07:57.785Z",
+    "updatedAt": "2025-12-28T05:07:57.817Z",
+    "externalId": "post-1766898477817-4hos1rgfp"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_value • subject=contact:lead_1766898477780",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_value • subject=contact:lead_1766898477780",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-29T05:07:57.781Z",
+    "status": "queued",
+    "id": "gtm_out_1766898477787_g2q4v6",
+    "createdAt": "2025-12-28T05:07:57.787Z",
+    "updatedAt": "2025-12-28T05:07:57.787Z"
+  },
+  {
+    "platform": "twitter",
+    "content": {
+      "text": "[Welcome Campaign] welcome_invite • subject=contact:lead_1766898477780",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_invite • subject=contact:lead_1766898477780",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-31T05:07:57.781Z",
+    "status": "queued",
+    "id": "gtm_out_1766898477789_390tjf",
+    "createdAt": "2025-12-28T05:07:57.789Z",
+    "updatedAt": "2025-12-28T05:07:57.789Z"
+  },
+  {
+    "platform": "linkedin",
+    "content": {
+      "text": "[Welcome Campaign] welcome_invite • subject=contact:lead_1766898477780",
+      "mediaRef": null
+    },
+    "formattedText": "⚑ [Welcome Campaign] welcome_invite • subject=contact:lead_1766898477780",
+    "cloneVoice": "operator_plain",
+    "persona": "broadcast",
+    "epochId": "expansion",
+    "intent": "gtm",
+    "scheduleMode": "schedule",
+    "scheduledAt": "2025-12-31T05:07:57.781Z",
+    "status": "queued",
+    "id": "gtm_out_1766898477789_o3wv4d",
+    "createdAt": "2025-12-28T05:07:57.789Z",
+    "updatedAt": "2025-12-28T05:07:57.789Z"
+  }
+]

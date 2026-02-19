@@ -1,0 +1,96 @@
+[
+  {
+    "leadId": "lead_1766898583893_1",
+    "type": "text",
+    "status": "pending",
+    "priority": "normal",
+    "dueAt": "2025-12-28T05:19:43.917Z",
+    "taskId": "task_1766898583917_2",
+    "tenantId": "xom3",
+    "createdAt": "2025-12-28T05:09:43.917Z"
+  },
+  {
+    "leadId": "lead_1766898583893_1",
+    "type": "call",
+    "status": "pending",
+    "priority": "high",
+    "dueAt": "2025-12-28T05:14:43.917Z",
+    "taskId": "task_1766898583917_1",
+    "tenantId": "xom3",
+    "createdAt": "2025-12-28T05:09:43.917Z"
+  },
+  {
+    "taskId": "task_1766898477794_lo29m6s",
+    "tenant": "xom3",
+    "leadId": "lead_eG9tMzplOnRlc3RsZWFkZX",
+    "type": "text",
+    "dueAt": "2025-12-28T05:17:57.794Z",
+    "assignedTo": null,
+    "status": "pending",
+    "createdAt": "2025-12-28T05:07:57.794Z",
+    "updatedAt": "2025-12-28T05:07:57.794Z",
+    "completedAt": null,
+    "overdueAt": null,
+    "overdueSignalAt": null,
+    "notes": "Send intro text/email (10m SLA)"
+  },
+  {
+    "taskId": "task_1766898477794_xuwmnkb",
+    "tenant": "xom3",
+    "leadId": "lead_eG9tMzplOnRlc3RsZWFkZX",
+    "type": "call",
+    "dueAt": "2025-12-28T05:12:57.794Z",
+    "assignedTo": null,
+    "status": "pending",
+    "createdAt": "2025-12-28T05:07:57.794Z",
+    "updatedAt": "2025-12-28T05:07:57.794Z",
+    "completedAt": null,
+    "overdueAt": null,
+    "overdueSignalAt": null,
+    "notes": "Call lead (5m SLA)"
+  },
+  {
+    "leadId": "lead_1766534709386_2",
+    "type": "text",
+    "status": "overdue",
+    "priority": "normal",
+    "dueAt": "2025-12-24T00:15:09.389Z",
+    "taskId": "task_1766534709389_4",
+    "tenantId": "xom3",
+    "createdAt": "2025-12-24T00:05:09.389Z",
+    "escalated": true
+  },
+  {
+    "leadId": "lead_1766534709386_2",
+    "type": "call",
+    "status": "overdue",
+    "priority": "high",
+    "dueAt": "2025-12-24T00:10:09.388Z",
+    "taskId": "task_1766534709389_3",
+    "tenantId": "xom3",
+    "createdAt": "2025-12-24T00:05:09.389Z",
+    "escalated": true
+  },
+  {
+    "leadId": "lead_1766534565788_1",
+    "type": "text",
+    "status": "overdue",
+    "priority": "normal",
+    "dueAt": "2025-12-24T00:12:45.794Z",
+    "taskId": "task_1766534565794_2",
+    "tenantId": "xom3",
+    "createdAt": "2025-12-24T00:02:45.794Z",
+    "escalated": true
+  },
+  {
+    "leadId": "lead_1766534565788_1",
+    "type": "call",
+    "status": "completed",
+    "priority": "high",
+    "dueAt": "2025-12-24T00:07:45.791Z",
+    "taskId": "task_1766534565793_1",
+    "tenantId": "xom3",
+    "createdAt": "2025-12-24T00:02:45.793Z",
+    "completedAt": "2025-12-24T00:03:09.840Z"
+  }
+]

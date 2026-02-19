@@ -1,0 +1,62 @@
+[
+  {
+    "sceneId": "operator-demo",
+    "crewId": "demo",
+    "status": "completed",
+    "startedAt": 1766532717899,
+    "currentStepIndex": 3,
+    "context": {
+      "trigger": {
+        "eventType": "operator.enterDemoMode",
+        "at": 1766532717899,
+        "payload": {
+          "eventId": "sev_1766532717898_54"
+        }
+      },
+      "metadata": {
+        "crew": [
+          "hud",
+          "rituals",
+          "constellation.reflexChains",
+          "gtm.outbound"
+        ]
+      }
+    },
+    "steps": [
+      {
+        "stepId": "hud",
+        "type": "setHudState",
+        "status": "completed",
+        "startedAt": 1766532717901,
+        "completedAt": 1766532717904,
+        "output": {
+          "state": "demoMode"
+        }
+      },
+      {
+        "stepId": "ritual",
+        "type": "startRitual",
+        "status": "completed",
+        "startedAt": 1766532717905,
+        "completedAt": 1766532717910,
+        "output": {
+          "ritualKey": "demo_ritual",
+          "runId": "rit_1766532717909_1",
+          "status": "failed"
+        }
+      },
+      {
+        "stepId": "seal",
+        "type": "emitSignal",
+        "status": "completed",
+        "startedAt": 1766532717910,
+        "completedAt": 1766532717911,
+        "output": {
+          "emitted": "cos.demo.started"
+        }
+      }
+    ],
+    "instanceId": "cos_1766532717899_1",
+    "completedAt": 1766532717911
+  }
+]

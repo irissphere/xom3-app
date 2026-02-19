@@ -1,0 +1,62 @@
+[
+  {
+    "entityId": "lead_1766531472272",
+    "funnelId": "lead-intake",
+    "stageId": "captured",
+    "enteredAt": 1766531472272,
+    "sourceEvent": {
+      "eventType": "contactCreated",
+      "at": 1766531472272,
+      "meta": {
+        "leadId": "lead_1766531472272"
+      }
+    },
+    "history": [
+      {
+        "stageId": "captured",
+        "enteredAt": 1766531472272,
+        "eventType": "contactCreated"
+      }
+    ]
+  },
+  {
+    "entityId": "lead_1766531627064",
+    "funnelId": "lead-intake",
+    "stageId": "captured",
+    "enteredAt": 1766531627064,
+    "sourceEvent": {
+      "eventType": "contactCreated",
+      "at": 1766531627064,
+      "meta": {
+        "leadId": "lead_1766531627064"
+      }
+    },
+    "history": [
+      {
+        "stageId": "captured",
+        "enteredAt": 1766531627064,
+        "eventType": "contactCreated"
+      }
+    ]
+  },
+  {
+    "entityId": "lead_1766898477780",
+    "funnelId": "lead-intake",
+    "stageId": "captured",
+    "enteredAt": 1766898477781,
+    "sourceEvent": {
+      "eventType": "contactCreated",
+      "at": 1766898477781,
+      "meta": {
+        "leadId": "lead_1766898477780"
+      }
+    },
+    "history": [
+      {
+        "stageId": "captured",
+        "enteredAt": 1766898477781,
+        "eventType": "contactCreated"
+      }
+    ]
+  }
+]

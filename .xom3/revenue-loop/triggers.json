@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "byTenant": {
+    "xom3": [
+      {
+        "triggerId": "revloop_lead_created",
+        "type": "lead_created",
+        "platformTargets": [
+          "x",
+          "linkedin"
+        ],
+        "templateId": "lead_created",
+        "enabled": true
+      },
+      {
+        "triggerId": "revloop_task_completed",
+        "type": "task_completed",
+        "platformTargets": [
+          "x"
+        ],
+        "templateId": "task_completed",
+        "enabled": true
+      },
+      {
+        "triggerId": "revloop_lead_closed",
+        "type": "lead_closed",
+        "platformTargets": [
+          "linkedin"
+        ],
+        "templateId": "lead_closed",
+        "enabled": true
+      },
+      {
+        "triggerId": "revloop_task_overdue",
+        "type": "task_overdue",
+        "platformTargets": [
+          "linkedin"
+        ],
+        "templateId": "task_overdue",
+        "enabled": false
+      }
+    ],
+    "[object Object]": [
+      {
+        "triggerId": "revloop_lead_created",
+        "type": "lead_created",
+        "platformTargets": [
+          "x",
+          "linkedin"
+        ],
+        "templateId": "lead_created",
+        "enabled": true
+      },
+      {
+        "triggerId": "revloop_task_completed",
+        "type": "task_completed",
+        "platformTargets": [
+          "x"
+        ],
+        "templateId": "task_completed",
+        "enabled": true
+      },
+      {
+        "triggerId": "revloop_lead_closed",
+        "type": "lead_closed",
+        "platformTargets": [
+          "linkedin"
+        ],
+        "templateId": "lead_closed",
+        "enabled": true
+      },
+      {
+        "triggerId": "revloop_task_overdue",
+        "type": "task_overdue",
+        "platformTargets": [
+          "linkedin"
+        ],
+        "templateId": "task_overdue",
+        "enabled": false
+      }
+    ]
+  }
+}

@@ -35,19 +35,7 @@ export default function SignalsTimelinePanel({ ctx }: { ctx: OperatorDashboardCo
     fetchSignals();
   }, [ctx.headers]);
 
-  // Mock signals
-  const mockSignals: Signal[] = [
-    { id: "1", type: "lead", message: "New lead captured from Google Ads campaign", time: "Just now", source: "intake", severity: "success" },
-    { id: "2", type: "sms", message: "SMS sequence triggered for John D.", time: "2m ago", source: "n8n", severity: "info" },
-    { id: "3", type: "workflow", message: "Follow-up workflow completed successfully", time: "5m ago", source: "automation", severity: "success" },
-    { id: "4", type: "appointment", message: "Appointment scheduled for tomorrow 2PM", time: "12m ago", source: "calendar", severity: "info" },
-    { id: "5", type: "call", message: "Voice call connected with Sarah M.", time: "18m ago", source: "voice", severity: "info" },
-    { id: "6", type: "error", message: "SMS delivery failed - invalid number", time: "25m ago", source: "twilio", severity: "error" },
-    { id: "7", type: "success", message: "Lead converted to customer", time: "32m ago", source: "crm", severity: "success" },
-    { id: "8", type: "workflow", message: "Social post published to Instagram", time: "45m ago", source: "social", severity: "info" },
-  ];
-
-  const displaySignals = (signals && signals.length > 0) ? signals : mockSignals;
+  const displaySignals = signals || [];
   const filteredSignals = filter === "all" 
     ? displaySignals 
     : displaySignals.filter(s => s.type === filter);

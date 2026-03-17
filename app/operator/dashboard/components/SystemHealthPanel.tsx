@@ -36,29 +36,33 @@ export default function SystemHealthPanel({ ctx }: { ctx: OperatorDashboardConte
     fetchHealth();
   }, [ctx.headers]);
 
-  // Mock data
-  const mockHealth: SystemHealth = {
-    status: "healthy",
-    uptime: "99.98%",
-    lastCheck: "Just now",
-    services: [
-      { name: "API Gateway", status: "up", latency: 45 },
-      { name: "Database", status: "up", latency: 12 },
-      { name: "SMS Provider", status: "up", latency: 89 },
-      { name: "Voice Service", status: "up", latency: 156 },
-      { name: "n8n Workflows", status: "up", latency: 234 },
-    ],
-  };
-
-  const displayHealth = health || mockHealth;
-
   const statusColors = {
     healthy: { bg: "rgba(34, 197, 94, 0.15)", border: "rgba(34, 197, 94, 0.3)", text: "#22c55e" },
     degraded: { bg: "rgba(234, 179, 8, 0.15)", border: "rgba(234, 179, 8, 0.3)", text: "#eab308" },
     down: { bg: "rgba(239, 68, 68, 0.15)", border: "rgba(239, 68, 68, 0.3)", text: "#ef4444" },
   };
 
-  const colors = statusColors[displayHealth.status] || statusColors.healthy;
+  if (loading || !health) {
+    return (
+      <div className="xom3-panel">
+        <div className="xom3-panel-header">
+          <div>
+            <h3 className="xom3-panel-title">System Health</h3>
+            <p className="xom3-panel-subtitle">Service status and performance</p>
+          </div>
+        </div>
+        <div className="xom3-empty">
+          <div className="xom3-empty-icon">📡</div>
+          <div className="xom3-empty-title">{loading ? "Loading..." : "No health data"}</div>
+          <div className="xom3-empty-description">
+            {loading ? "Fetching service status..." : "Connect your systems to see health metrics"}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const colors = statusColors[health.status] || statusColors.healthy;
 
   return (
     <div className="xom3-panel">
@@ -90,7 +94,7 @@ export default function SystemHealthPanel({ ctx }: { ctx: OperatorDashboardConte
             color: colors.text,
             textTransform: "capitalize",
           }}>
-            {displayHealth.status}
+            {health.status}
           </span>
         </div>
       </div>
@@ -104,13 +108,13 @@ export default function SystemHealthPanel({ ctx }: { ctx: OperatorDashboardConte
       }}>
         <div className="xom3-stat">
           <span className="xom3-stat-value" style={{ color: "#22c55e" }}>
-            {displayHealth.uptime}
+            {health.uptime}
           </span>
           <span className="xom3-stat-label">Uptime (30d)</span>
         </div>
         <div className="xom3-stat">
           <span className="xom3-stat-value-sm xom3-stat-value">
-            {displayHealth.lastCheck}
+            {health.lastCheck}
           </span>
           <span className="xom3-stat-label">Last Check</span>
         </div>
@@ -132,7 +136,7 @@ export default function SystemHealthPanel({ ctx }: { ctx: OperatorDashboardConte
           Services
         </h4>
         <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-2)" }}>
-          {(displayHealth.services || []).map((service) => {
+          {(health.services || []).map((service) => {
             const statusKey = service.status === "up" ? "healthy" : (service.status === "degraded" ? "degraded" : "down");
             const svcColors = statusColors[statusKey] || statusColors.healthy;
             return (

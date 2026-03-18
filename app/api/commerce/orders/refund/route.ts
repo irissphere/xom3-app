@@ -5,9 +5,11 @@ import { sendEmail } from "@/lib/email/client";
 
 export const dynamic = "force-dynamic";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia" as any,
-});
+function getStripe() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: "2024-12-18.acacia" as any,
+  });
+}
 
 const getSupabaseAdmin = () =>
   createClient(
@@ -59,6 +61,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Process Stripe refund
+    const stripe = getStripe();
     const refund = await stripe.refunds.create({
       payment_intent: paymentIntentId,
       reason: (reason === "duplicate" || reason === "fraudulent" || reason === "requested_by_customer")

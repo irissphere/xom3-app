@@ -4,10 +4,11 @@ import { createClient } from '@supabase/supabase-js';
 import { cookies } from 'next/headers';
 
 // Service role client for database operations
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+const getSupabaseAdmin = () =>
+  createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
 
 /**
  * Create a Supabase client for API route handlers
@@ -66,7 +67,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const { data: products, error } = await supabaseAdmin
+    const { data: products, error } = await getSupabaseAdmin()
       .from('spacebaddie_products')
       .select('*')
       .eq('user_id', userId)
@@ -116,7 +117,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { data: product, error } = await supabaseAdmin
+    const { data: product, error } = await getSupabaseAdmin()
       .from('spacebaddie_products')
       .insert({
         user_id: userId,

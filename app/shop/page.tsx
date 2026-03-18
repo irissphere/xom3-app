@@ -652,10 +652,9 @@ export default function PublicShopPage() {
                           WebkitBoxOrient: 'vertical',
                           overflow: 'hidden',
                         }}
-                        dangerouslySetInnerHTML={{
-                          __html: rewriteDescriptionImageUrls(sanitizeDescriptionHtml(product.description)),
-                        }}
-                      />
+                      >
+                        {stripHtml(product.description).slice(0, 120)}
+                      </div>
                     )}
 
                     <div style={{
@@ -709,30 +708,32 @@ export default function PublicShopPage() {
                       )}
                     </div>
 
-                    {/* Create Content CTA */}
-                    <a
-                      href={`${MAIN_DOMAIN}/spacebaddie/studio?product=${product.id}&name=${encodeURIComponent(product.name)}`}
-                      onClick={(e) => e.stopPropagation()}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '6px',
-                        marginTop: '10px',
-                        padding: '6px 12px',
-                        background: 'rgba(139,92,246,0.08)',
-                        border: '1px solid rgba(139,92,246,0.15)',
-                        borderRadius: '8px',
-                        color: '#c4b5fd',
-                        textDecoration: 'none',
-                        fontSize: '11px',
-                        fontWeight: 600,
-                        transition: 'all 0.2s',
-                        width: 'fit-content',
-                      }}
-                    >
-                      <span>{'\u{1F3AC}'}</span>
-                      Create Content
-                    </a>
+                    {/* Create Content CTA - only for logged-in sellers */}
+                    {isLoggedIn && (
+                      <a
+                        href={`${MAIN_DOMAIN}/spacebaddie/studio?product=${product.id}&name=${encodeURIComponent(product.name)}`}
+                        onClick={(e) => e.stopPropagation()}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                          marginTop: '10px',
+                          padding: '6px 12px',
+                          background: 'rgba(139,92,246,0.08)',
+                          border: '1px solid rgba(139,92,246,0.15)',
+                          borderRadius: '8px',
+                          color: '#c4b5fd',
+                          textDecoration: 'none',
+                          fontSize: '11px',
+                          fontWeight: 600,
+                          transition: 'all 0.2s',
+                          width: 'fit-content',
+                        }}
+                      >
+                        <span>{'\u{1F3AC}'}</span>
+                        Create Content
+                      </a>
+                    )}
                   </div>
                 </div>
               </Link>

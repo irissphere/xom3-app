@@ -4,10 +4,11 @@ import { createClient } from '@supabase/supabase-js';
 import { cookies } from 'next/headers';
 
 // Service role client for database operations
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+const getSupabaseAdmin = () =>
+  createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
 
 /**
  * Create a Supabase client for API route handlers
@@ -70,7 +71,7 @@ export async function GET(
       );
     }
 
-    const { data: product, error } = await supabaseAdmin
+    const { data: product, error } = await getSupabaseAdmin()
       .from('spacebaddie_products')
       .select('*')
       .eq('id', id)
@@ -114,7 +115,7 @@ export async function PUT(
     }
 
     // Verify ownership
-    const { data: existing, error: fetchError } = await supabaseAdmin
+    const { data: existing, error: fetchError } = await getSupabaseAdmin()
       .from('spacebaddie_products')
       .select('id')
       .eq('id', id)
@@ -142,7 +143,7 @@ export async function PUT(
     if (image_url !== undefined) updateData.image_url = image_url;
     if (status !== undefined) updateData.status = status;
 
-    const { data: product, error } = await supabaseAdmin
+    const { data: product, error } = await getSupabaseAdmin()
       .from('spacebaddie_products')
       .update(updateData)
       .eq('id', id)
@@ -188,7 +189,7 @@ export async function DELETE(
     }
 
     // Verify ownership and delete
-    const { error } = await supabaseAdmin
+    const { error } = await getSupabaseAdmin()
       .from('spacebaddie_products')
       .delete()
       .eq('id', id)

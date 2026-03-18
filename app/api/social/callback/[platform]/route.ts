@@ -2,10 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { cookies } from 'next/headers';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+const getSupabase = () =>
+  createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
 
 // Token exchange endpoints
 const TOKEN_ENDPOINTS: Record<string, string> = {
@@ -108,7 +109,7 @@ export async function GET(
     };
 
     console.log(`[OAuth Callback] Saving ${platform} connection for user ${userId}`);
-    const { error: upsertError } = await supabase
+    const { error: upsertError } = await getSupabase()
       .from('spacebaddie_social_connections')
       .upsert(connectionRow, { onConflict: 'user_id,tenant,platform' });
 

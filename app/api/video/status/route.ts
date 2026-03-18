@@ -1,9 +1,11 @@
 /**
  * Video Status API - GET /api/video/status
- * 
+ *
  * Returns status of a video generation job.
  * Supports both query param (?jobId=xxx) and listing jobs for a tenant.
  */
+
+export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getVideoJob, listJobs } from '@/lib/video/job-queue';

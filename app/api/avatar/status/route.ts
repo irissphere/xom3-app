@@ -1,8 +1,10 @@
 /**
  * Avatar Status API - GET /api/avatar/status
- * 
+ *
  * Returns status of avatar generation jobs.
  */
+
+export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
 import { getAvatarJob, getJobsByTenant, getAllAvatarJobs } from '@/lib/avatar/job-store';

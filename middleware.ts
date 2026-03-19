@@ -82,7 +82,12 @@ export async function middleware(request: NextRequest) {
       url.pathname = pathname.replace("/trading", "/spacebaddie/trading");
       return NextResponse.rewrite(url);
     }
-    
+
+    // If accessing /shop, allow it through (public storefront)
+    if (pathname.startsWith("/shop")) {
+      return NextResponse.next();
+    }
+
     // If already on a /spacebaddie path, allow it through
     if (pathname.startsWith("/spacebaddie")) {
       return NextResponse.next();

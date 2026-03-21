@@ -116,17 +116,21 @@ export async function listOpus1Leads(input: ListOpus1LeadsInput = {}): Promise<O
     );
   }
 
-  const filterByFormula = filterParts.length 
+  const filterByFormula = filterParts.length
     ? (filterParts.length === 1 ? filterParts[0] : `AND(${filterParts.join(",")})`)
-    : "";
+    : null;
+
+  const selectOpts: { maxRecords: number; sort: { field: string; direction: string }[]; filterByFormula?: string } = {
+    maxRecords: limit,
+    sort: [{ field: "Date_Received", direction: "desc" }],
+  };
+  if (filterByFormula && typeof filterByFormula === "string") {
+    selectOpts.filterByFormula = filterByFormula;
+  }
 
   try {
     const records = (await base(OPUS1_LEADS_TABLE)
-      .select({
-        maxRecords: limit,
-        sort: [{ field: "Date_Received", direction: "desc" }],
-        filterByFormula: filterByFormula || undefined,
-      })
+      .select(selectOpts)
       .all()) as unknown as AirtableRecord[];
 
     return records.map(mapLeadRecord);

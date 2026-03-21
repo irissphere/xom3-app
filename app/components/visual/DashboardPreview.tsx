@@ -7,32 +7,44 @@ interface DashboardPreviewProps {
   className?: string;
 }
 
-// Simulated dashboard data that updates
-const MOCK_STATS = {
-  leads: { value: 847, label: "Leads Today", trend: "+23%" },
-  sms: { value: 1243, label: "SMS Sent", trend: "+15%" },
-  calls: { value: 89, label: "Calls Made", trend: "+8%" },
-  appointments: { value: 34, label: "Appointments", trend: "+12%" },
+// Static labels - values come from API or show 0
+const STAT_LABELS: Record<string, { label: string }> = {
+  leads: { label: "Leads Today" },
+  sms: { label: "SMS Sent" },
+  calls: { label: "Calls Made" },
+  appointments: { label: "Appointments" },
 };
 
-const MOCK_ACTIVITIES = [
-  { type: "lead", text: "New lead: John D. from Google Ads", time: "Just now" },
-  { type: "sms", text: "SMS sent to Maria S.", time: "2m ago" },
-  { type: "call", text: "Call completed with Robert K.", time: "5m ago" },
-  { type: "appointment", text: "Appointment booked: Tomorrow 2PM", time: "8m ago" },
-];
-
 export default function DashboardPreview({ size = 480, className }: DashboardPreviewProps) {
+  const [stats, setStats] = useState<Record<string, number>>({ leads: 0, sms: 0, calls: 0, appointments: 0 });
+  const [activities, setActivities] = useState<Array<{ type: string; text: string; time: string }>>([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [pulseStats, setPulseStats] = useState(false);
 
-  // Rotate through activities
   useEffect(() => {
+    fetch("/api/intakecrm/status")
+      .then((r) => r.ok ? r.json() : null)
+      .then((data) => {
+        if (data?.counts) {
+          setStats({
+            leads: data.counts.leads ?? 0,
+            sms: 0,
+            calls: 0,
+            appointments: 0,
+          });
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  // Rotate through activities when we have them
+  useEffect(() => {
+    if (activities.length === 0) return;
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % MOCK_ACTIVITIES.length);
+      setActiveIndex((prev) => (prev + 1) % activities.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [activities.length]);
 
   // Pulse animation for stats
   useEffect(() => {
@@ -154,7 +166,7 @@ export default function DashboardPreview({ size = 480, className }: DashboardPre
             </div>
           </div>
 
-          {/* Stats grid */}
+          {/* Stats grid - real data or zeros */}
           <div
             style={{
               display: "grid",
@@ -162,7 +174,7 @@ export default function DashboardPreview({ size = 480, className }: DashboardPre
               gap: 8 * scale,
             }}
           >
-            {Object.entries(MOCK_STATS).map(([key, stat]) => (
+            {Object.entries(STAT_LABELS).map(([key, { label }]) => (
               <div
                 key={key}
                 style={{
@@ -183,7 +195,7 @@ export default function DashboardPreview({ size = 480, className }: DashboardPre
                     marginBottom: 4 * scale,
                   }}
                 >
-                  {stat.value.toLocaleString()}
+                  {(stats[key] ?? 0).toLocaleString()}
                 </div>
                 <div
                   style={{
@@ -192,16 +204,7 @@ export default function DashboardPreview({ size = 480, className }: DashboardPre
                     marginBottom: 2 * scale,
                   }}
                 >
-                  {stat.label}
-                </div>
-                <div
-                  style={{
-                    fontSize: 9 * scale,
-                    color: "#22c55e",
-                    fontWeight: 500,
-                  }}
-                >
-                  {stat.trend}
+                  {label}
                 </div>
               </div>
             ))}
@@ -230,60 +233,61 @@ export default function DashboardPreview({ size = 480, className }: DashboardPre
               LIVE ACTIVITY
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 * scale }}>
-              {MOCK_ACTIVITIES.map((activity, idx) => (
-                <div
-                  key={idx}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 8 * scale,
-                    padding: `${6 * scale}px ${8 * scale}px`,
-                    borderRadius: 6 * scale,
-                    background:
-                      idx === activeIndex
-                        ? "rgba(10, 132, 255, 0.15)"
-                        : "transparent",
-                    border:
-                      idx === activeIndex
-                        ? "1px solid rgba(10, 132, 255, 0.3)"
-                        : "1px solid transparent",
-                    transition: "all 300ms ease",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: 6 * scale,
-                      height: 6 * scale,
-                      borderRadius: "50%",
-                      background:
-                        activity.type === "lead"
-                          ? "#22d3ee"
-                          : activity.type === "sms"
-                          ? "#a78bfa"
-                          : activity.type === "call"
-                          ? "#f472b6"
-                          : "#22c55e",
-                    }}
-                  />
-                  <span
-                    style={{
-                      flex: 1,
-                      fontSize: 10 * scale,
-                      color: idx === activeIndex ? "#fff" : "#94a3b8",
-                    }}
-                  >
-                    {activity.text}
-                  </span>
-                  <span
-                    style={{
-                      fontSize: 8 * scale,
-                      color: "#475569",
-                    }}
-                  >
-                    {activity.time}
-                  </span>
+              {activities.length === 0 ? (
+                <div style={{ fontSize: 10 * scale, color: "#64748b", padding: 8 * scale }}>
+                  Connect your systems to see live activity
                 </div>
-              ))}
+              ) : (
+                activities.map((activity, idx) => (
+                  <div
+                    key={idx}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 8 * scale,
+                      padding: `${6 * scale}px ${8 * scale}px`,
+                      borderRadius: 6 * scale,
+                      background:
+                        idx === activeIndex
+                          ? "rgba(10, 132, 255, 0.15)"
+                          : "transparent",
+                      border:
+                        idx === activeIndex
+                          ? "1px solid rgba(10, 132, 255, 0.3)"
+                          : "1px solid transparent",
+                      transition: "all 300ms ease",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 6 * scale,
+                        height: 6 * scale,
+                        borderRadius: "50%",
+                        background:
+                          activity.type === "lead"
+                            ? "#22d3ee"
+                            : activity.type === "sms"
+                            ? "#a78bfa"
+                            : activity.type === "call"
+                            ? "#f472b6"
+                            : "#22c55e",
+                      }}
+                    />
+                    <span
+                      style={{
+                        flex: 1,
+                        fontSize: 10 * scale,
+                        color: idx === activeIndex ? "#fff" : "#94a3b8",
+                      }}
+                    >
+                      {activity.text}
+                    </span>
+                    <span style={{ fontSize: 8 * scale, color: "#475569" }}>
+                      {activity.time}
+                    </span>
+                  </div>
+                ))
+              )}
             </div>
           </div>
 

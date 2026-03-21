@@ -33,38 +33,43 @@ interface StatsResponse {
   }>;
 }
 
-// Mock leaderboard data
-const mockLeaderboard = [
-  { rank: 1, name: "Op****er", referrals: 47, earnings: "$892.50" },
-  { rank: 2, name: "Gr****th", referrals: 38, earnings: "$714.00" },
-  { rank: 3, name: "Mo****ey", referrals: 31, earnings: "$583.50" },
-  { rank: 4, name: "Te****ch", referrals: 24, earnings: "$451.00" },
-  { rank: 5, name: "In****va", referrals: 19, earnings: "$357.00" },
-];
+interface LeaderboardEntry {
+  rank: number;
+  name: string;
+  referrals: number;
+  earnings: string;
+}
 
 export default function ImpactPage() {
   const [codeData, setCodeData] = useState<CodeResponse | null>(null);
   const [statsData, setStatsData] = useState<StatsResponse | null>(null);
+  const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
-  const [userRank, setUserRank] = useState(12);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const [codeRes, statsRes] = await Promise.all([
+        const [codeRes, statsRes, leaderboardRes] = await Promise.all([
           fetch("/api/referral/code"),
           fetch("/api/referral/stats"),
+          fetch("/api/referral/leaderboard"),
         ]);
-        
+
         if (codeRes.ok) {
           const codeJson = await codeRes.json();
           setCodeData(codeJson);
         }
-        
+
+        let statsJson: StatsResponse | null = null;
         if (statsRes.ok) {
-          const statsJson = await statsRes.json();
+          statsJson = await statsRes.json();
           setStatsData(statsJson);
+        }
+
+        if (leaderboardRes.ok) {
+          const { leaderboard: data } = await leaderboardRes.json();
+          setLeaderboard(data || []);
         }
       } catch (error) {
         console.error("Failed to fetch referral data:", error);
@@ -72,7 +77,7 @@ export default function ImpactPage() {
         setLoading(false);
       }
     }
-    
+
     fetchData();
   }, []);
 
@@ -330,32 +335,14 @@ export default function ImpactPage() {
                 Referral Leaderboard
               </h3>
               
-              {/* Your Rank */}
-              <div style={{
-                background: "linear-gradient(135deg, rgba(167, 139, 250, 0.15) 0%, rgba(167, 139, 250, 0.05) 100%)",
-                border: "1px solid rgba(167, 139, 250, 0.3)",
-                borderRadius: 12,
-                padding: 14,
-                marginBottom: 16,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between"
-              }}>
-                <div>
-                  <div style={{ fontSize: 12, color: "var(--text-2)" }}>Your Rank</div>
-                  <div style={{ fontSize: 24, fontWeight: 800, color: "#a78bfa" }}>#{userRank}</div>
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  <div style={{ fontSize: 12, color: "var(--text-2)" }}>To Next Rank</div>
-                  <div style={{ fontSize: 14, fontWeight: 600, color: "#a78bfa" }}>
-                    {userRank > 1 ? `${(userRank - 1) * 3} more referrals` : "🥇 You're #1!"}
-                  </div>
-                </div>
-              </div>
-              
-              {/* Top 5 */}
+              {/* Top referrers - real data only */}
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                {mockLeaderboard.map((entry, i) => (
+                {leaderboard.length === 0 ? (
+                  <div style={{ padding: 24, textAlign: "center", color: "var(--text-2)", fontSize: 14 }}>
+                    No leaderboard data yet. Share your referral link to get on the board.
+                  </div>
+                ) : (
+                leaderboard.map((entry, i) => (
                   <div
                     key={entry.rank}
                     style={{
@@ -390,7 +377,8 @@ export default function ImpactPage() {
                       {entry.earnings}
                     </div>
                   </div>
-                ))}
+                ))
+                )}
               </div>
             </div>
           </div>

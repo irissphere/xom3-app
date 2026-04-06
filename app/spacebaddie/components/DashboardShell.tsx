@@ -27,7 +27,7 @@ const NAV_ITEMS = [
   { href: '/spacebaddie/projects', label: 'Projects', icon: '📁' },
   { href: '/spacebaddie/automation', label: 'Automation', icon: '🚀' },
   { href: '/spacebaddie/engage', label: 'Engage', icon: '💬' },
-  { href: 'https://shop.spacebaddie.com', label: 'Store', icon: '🛒', external: true },
+  { href: 'https://xom3.io/shop', label: 'Store', icon: '🛒', external: true },
   { href: '/spacebaddie/insights', label: 'Insights', icon: '📊' },
 ];
 
